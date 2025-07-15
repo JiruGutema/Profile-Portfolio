@@ -27,7 +27,7 @@ export default function PortfolioPage() {
             <CardContent className="p-6 text-center">
               <div className="relative w-32 h-32 mx-auto mb-4">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/small_profile.jpg"
                   alt="Jiru Gutema Profile"
                   layout="fill"
                   objectFit="cover"
@@ -70,18 +70,18 @@ export default function PortfolioPage() {
             <CardHeader>
               <CardTitle className="text-2xl font-bold font-serif">Skills</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="">
               <h3 className="text-lg font-semibold">Programming Languages:</h3>
-              <p className="text-base">JavaScript, Python, Dart, Java, C++</p>
-              <h3 className="text-lg font-semibold">Frameworks & Libraries:</h3>
+              <p className="text-base mt-0">JavaScript, Python, Java</p>
+              <h3 className="text-lg mt-3 font-semibold">Frameworks & Libraries:</h3>
               <p className="text-base">React, Next.js, Node.js, Express, Flutter, NestJS</p>
-              <h3 className="text-lg font-semibold">Databases:</h3>
-              <p className="text-base">MySQL, MongoDB</p>
-              <h3 className="text-lg font-semibold">Tools & Platforms:</h3>
-              <p className="text-base">Git, Linux (advanced), Figma, JWT, Firebase</p>
-              <h3 className="text-lg font-semibold">Concepts:</h3>
+              <h3 className="text-lg mt-3 font-semibold">Databases:</h3>
+              <p className="text-base">Postgres, MySQL, MongoDB</p>
+              <h3 className="text-lg mt-3 font-semibold">Tools & Platforms:</h3>
+              <p className="text-base">Git, Linux (advanced), Figma, Vercel, Onrender, Netlify, Cloudinary</p>
+              <h3 className="text-lg mt-3 font-semibold">Concepts:</h3>
               <p className="text-base">
-                Data Structures and Algorithms (DSA), Object Oriented Programming, Cryptography
+                AI/ML, Data Structures and Algorithms (DSA), Object Oriented Programming, Cryptography
               </p>
             </CardContent>
           </Card>

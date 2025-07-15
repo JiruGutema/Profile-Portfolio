@@ -10,17 +10,6 @@ import Image from "next/image"
 export default function HomePage() {
   return (
     <div className="grid gap-8 py-4">
-      <section className="text-center pb-6 mb-6">
-        <div className="mt-0">
-          <Link href="/portfolio">
-            <Button className="rounded-none border border-border bg-primary text-primary-foreground hover:bg-primary/90">
-              Explore Portfolio
-            </Button>
-          </Link>
-        </div>
-
-      </section>
-
       <section className="grid md:grid-cols-3 gap-8 border-b border-border pb-6 mb-6">
         <div className="md:col-span-2 space-y-6">
           <h2 className="text-3xl font-bold font-serif border-b border-border pb-2">
