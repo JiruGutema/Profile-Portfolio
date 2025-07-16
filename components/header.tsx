@@ -14,6 +14,9 @@ export function Header() {
           <Link href="/portfolio" className="text-lg font-semibold hover:underline">
             Portfolio
           </Link>
+  <Link href="/projects" className="text-lg font-semibold hover:underline">
+            Projects
+          </Link>
           <Link href="/portfolio#contact" className="text-lg font-semibold hover:underline">
             Contact
           </Link>

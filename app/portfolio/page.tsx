@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Mail, Github, Linkedin, Globe, Code } from "lucide-react" // Added Globe and Code icons
+import { Mail, Github, Linkedin, Globe, Code, X } from "lucide-react" // Added Globe and Code icons
 
 export default function PortfolioPage() {
   return (
@@ -17,7 +17,7 @@ export default function PortfolioPage() {
           engineer.
         </p>
         <p className="text-sm text-muted-foreground mt-2">
-          Published on {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+          Last updated on July 15, 2025
         </p>
       </section>
 
@@ -74,11 +74,11 @@ export default function PortfolioPage() {
               <h3 className="text-lg font-semibold">Programming Languages:</h3>
               <p className="text-base mt-0">JavaScript, Python, Java</p>
               <h3 className="text-lg mt-3 font-semibold">Frameworks & Libraries:</h3>
-              <p className="text-base">React, Next.js, Node.js, Express, Flutter, NestJS</p>
+              <p className="text-base">React, Next.js, Node.js, Express, Flutter, NestJS, Tailwindcss</p>
               <h3 className="text-lg mt-3 font-semibold">Databases:</h3>
               <p className="text-base">Postgres, MySQL, MongoDB</p>
               <h3 className="text-lg mt-3 font-semibold">Tools & Platforms:</h3>
-              <p className="text-base">Git, Linux (advanced), Figma, Vercel, Onrender, Netlify, Cloudinary</p>
+              <p className="text-base">Git, Linux (advanced), Docker, Prisma, Neon, Github Projects, Figma, Vercel, Onrender, Netlify, Cloudinary</p>
               <h3 className="text-lg mt-3 font-semibold">Concepts:</h3>
               <p className="text-base">
                 AI/ML, Data Structures and Algorithms (DSA), Object Oriented Programming, Cryptography
@@ -90,7 +90,7 @@ export default function PortfolioPage() {
             <CardHeader>
               <CardTitle className="text-2xl font-bold font-serif">Languages</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent >
               <p className="text-base">English</p>
               <p className="text-base">Amharic</p>
               <p className="text-base">Afaan Oromoo</p>
@@ -121,33 +121,33 @@ export default function PortfolioPage() {
             <div className="space-y-4">
               <article>
                 <h3 className="text-xl font-semibold font-serif">BSc in Software Engineering</h3>
-                <p className="text-base text-muted-foreground">Addis Ababa University | 01/2023 – 09/2027</p>
-                <p className="text-base text-muted-foreground">Addis Ababa, Ethiopia</p>
+                <p className="text-base italic text-muted-foreground">Addis Ababa University | 01/2023 – 09/2027</p>
+                <p className="text-base italic text-muted-foreground">Addis Ababa, Ethiopia</p>
                 <ul className="list-disc list-inside text-base mt-2">
                   <li>
-                    <strong>Coursework: </strong>Data Structures and Algorithms, Operating System, Computer Architecture, Object
-                    Oriented Programming, Software Development.
+                    <strong className="italic">Coursework: </strong>Web Development, Mobile Application (Flutter), Fundamental of Software Engineering, Data Structures and Algorithms, Operating System, Computer Architecture, Object
+                    Oriented Programming, Software Development, .
                   </li>
                 </ul>
               </article>
               <article>
                 <h3 className="text-xl font-semibold font-serif">Coding Academy (backed by Google)</h3>
-                <p className="text-base text-muted-foreground">African to Silicon Valley | 01/2025 – 01/2026</p>
-                <p className="text-base text-muted-foreground">Addis Ababa, Ethiopia</p>
+                <p className="text-base italic text-muted-foreground">African to Silicon Valley | 01/2025 – 01/2026</p>
+                <p className="text-base italic text-muted-foreground">Addis Ababa, Ethiopia</p>
                 <ul className="list-disc list-inside text-base mt-2">
                   <li>
-                    <strong>Coursework: </strong>Advanced Data structures and Algorithms (Graph and Tree Algorithms, Dynamic
+                    <strong className="italic">Coursework: </strong>Advanced Data structures and Algorithms (Graph and Tree Algorithms, Dynamic
                     Programming, Advanced String Algorithms).
                   </li>
                 </ul>
               </article>
               <article>
                 <h3 className="text-xl font-semibold font-serif">Introduction to Cyber Security and Cryptography</h3>
-                <p className="text-base text-muted-foreground">INSA Summer Program | 11/2024 – 01/2025</p>
-                <p className="text-base text-muted-foreground">Addis Ababa, Ethiopia</p>
+                <p className="text-base italic text-muted-foreground">INSA Summer Program | 11/2024 – 01/2025</p>
+                <p className="text-base italic text-muted-foreground">Addis Ababa, Ethiopia</p>
                 <ul className="list-disc list-inside text-base mt-2">
                   <li>
-                    Courses: Introduction to Cyber Security and Ethical Hacking, Introduction to Cryptography.
+                    <strong className="italic">Courses:</strong> Introduction to Cyber Security and Ethical Hacking, Introduction to Cryptography.
                   </li>
                 </ul>
               </article>
@@ -157,24 +157,43 @@ export default function PortfolioPage() {
             <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">Experience</h2>
             <div className="space-y-4">
               <article>
-                <h3 className="text-xl font-semibold font-serif">Fullstack Developer Intern</h3>
-                <p className="text-base text-muted-foreground">Ethioware | 02/2025 – Present</p>
+                <h3 className="text-xl font-semibold font-serif">Backend Developer @Gulit</h3>
+                <p className="text-base text-muted-foreground">Gulit | 05/2025 – Present</p>
+                <p className="text-base text-muted-foreground">Addis Ababa, Ethiopia</p>
+                <ul className="list-disc list-inside text-base mt-2">
+                  <li>
+                   Currently, I am working as a Express backend developer for Gulit, where I am Implementing and maintaining the backend for their eCommerce platform.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3 className="text-xl font-semibold font-serif">Fullstack Developer @BewideTechnologies</h3>
+                <p className="text-base text-muted-foreground">Bewide Technologies | 07/2025 – Present</p>
+                <p className="text-base text-muted-foreground">Addis Ababa, Ethiopia</p>
+                <ul className="list-disc list-inside text-base mt-2">
+                  <li>
+                    I am Currently, a Fullstack Developer Intern at Bewide Teachnologies, where I am working on a full stack eCommerce Application for client. I am Implementing it using a Nextjs as a Full stack Framwework
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3 className="text-xl font-semibold font-serif">FullStack Developer Freelance EasyEnjaz</h3>
+                <p className="text-base text-muted-foreground">EasyEnjaz | 02/2025 – 05/2025</p>
+                <p className="text-base text-muted-foreground">Addis Ababa, Ethiopia</p>
+                <ul className="list-disc list-inside text-base mt-2">
+                  <li>
+                    Completed a Client full stack web application built with Expressjs and Reactjs. The application is capable of managing a visa applicants, printing summery and report, easy application process for all applicants.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3 className="text-xl font-semibold font-serif">Backend Developer Intern @Ethioware</h3>
+                <p className="text-base text-muted-foreground">Ethioware | 02/2025 – 05/2025</p>
                 <p className="text-base text-muted-foreground">Addis Ababa, Ethiopia</p>
                 <ul className="list-disc list-inside text-base mt-2">
                   <li>
                     Completed a short-term backend development internship, working with Node.js and Express to build and
                     improve server-side applications.
-                  </li>
-                </ul>
-              </article>
-              <article>
-                <h3 className="text-xl font-semibold font-serif">File Encryption Web App (Summer Camp Project)</h3>
-                <p className="text-base text-muted-foreground">INSA | 06/2024 – 08/2024</p>
-                <p className="text-base text-muted-foreground">Addis Ababa, Ethiopia</p>
-                <ul className="list-disc list-inside text-base mt-2">
-                  <li>
-                    Worked on a final graduation project for the INSA Summer Camp program, demonstrating skills in
-                    cryptography by building a file encryption web application.
                   </li>
                 </ul>
               </article>
@@ -262,7 +281,9 @@ export default function PortfolioPage() {
               </Card>
             </div>
           </section>
-
+          <Link href="/projects"  style={{background: 'black'}} className="text-white p-2 hover:underline text-sm mt-2 inline-block">
+            View Selected Projects
+          </Link>
           <Separator className="bg-border" />
 
           <section>
@@ -308,26 +329,19 @@ export default function PortfolioPage() {
                 <CardContent className="p-6">
                   <p className="text-base italic mb-2">
                     {
-                      '"Jiru is an exceptionally bright and dedicated student. Her problem-solving skills and ability to quickly grasp complex concepts are truly impressive. She was a valuable asset to our team."'
-                    }
-                  </p>
-                  <p className="text-sm font-semibold text-muted-foreground">
-                    - Dr. Emily Chen, Professor of Computer Science (Placeholder)
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="border border-border rounded-none shadow-none">
-                <CardContent className="p-6">
-                  <p className="text-base italic mb-2">
+                      '"To Whom It May Concern:"'
+                    }</p>
+                  <p className="text-base mb-4">
                     {
-                      '"During her internship, Jiru consistently delivered high-quality code and showed great initiative. She\'s a quick learner and a pleasure to work with."'
+                      '"...As Product Manager, I had the privilege of working closely with Jiru on the Company Website Redesign project, where he served as a Backend Web Developer. Jiru quickly distinguished himself through his unique attributes. He takes initiative and suggested using React for the project. He handles project requirements carefully, delivers timely updates, and is a team player. His performance during the internship was marked by strong collaboration with peers, proficiency in the React framework, and a solid understanding of backend workflows. I am confident that Jiru Gutema will excel in any backend web development role he pursues. His initiative, careful handling of requirements, timely updates, and teamwork skills will make him a valuable asset to any team. I wholeheartedly recommend him and would welcome the opportunity to work with him again."'
                     }
                   </p>
                   <p className="text-sm font-semibold text-muted-foreground">
-                    - John Smith, Senior Software Engineer at Tech Innovations Inc. (Placeholder)
+                    - <a href="https://www.linkedin.com/in/anteneh-yimmam0/">Anteneh Yimmam</a>, A Education Lead at Ethioware EdTech Initiative
                   </p>
                 </CardContent>
               </Card>
+              
             </div>
           </section>
 
@@ -361,12 +375,13 @@ export default function PortfolioPage() {
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://x.com/jirugutema" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" className="rounded-full border-border bg-transparent">
-                    <Globe className="h-5 w-5" />
-                    <span className="sr-only">Website</span>
+                    <X className="h-5 w-5" />
+                    <span className="sr-only">X</span>
                   </Button>
                 </Link>
+              
                 <Link href="https://leetcode.com/yourprofile" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" className="rounded-full border-border bg-transparent">
                     <Code className="h-5 w-5" />
