@@ -91,9 +91,9 @@ export default function PortfolioPage() {
               <CardTitle className="text-2xl font-bold font-serif">Languages</CardTitle>
             </CardHeader>
             <CardContent >
-              <p className="text-base">English</p>
-              <p className="text-base">Amharic</p>
-              <p className="text-base">Afaan Oromoo</p>
+              <p className="text-base">English (Fluent)</p>
+              <p className="text-base">Afaan Oromoo (Native)</p>
+              <p className="text-base">Amharic (Fluent)</p>
             </CardContent>
           </Card>
         </div>
