@@ -110,10 +110,10 @@ export default function PortfolioPage() {
             <p className="text-base leading-relaxed mt-4">
               My interests lie in <strong>full-stack development</strong>, <strong>machine learning</strong>, and <strong>cloud computing</strong>. I believe in writing
               clean, efficient, and maintainable code, and I am committed to continuous improvement. Outside of coding,
-              I enjoy exploring new technologies, listening to educational and science videos (<Link href="https://www.youtube.com/c/veritasium"  style={{ color: "blue", textDecoration: "underline" }}   target="_blank" rel="noopener noreferrer">Veritasium</Link>, <Link href="https://www.youtube.com/c/3Blue1Brown"  style={{ color: "blue", textDecoration: "underline" }}   target="_blank" rel="noopener noreferrer">3Blue1Brown</Link>, <Link href="https://www.youtube.com/c/vsauce"  style={{ color: "blue", textDecoration: "underline" }}   target="_blank" rel="noopener noreferrer">Vsauce</Link> ), and contributing to open-source projects.
+              I enjoy exploring new technologies, listening to educational and science videos (<Link href="https://www.youtube.com/c/veritasium"  style={{ color: "blue", textDecoration: "underline" }}   target="_blank" rel="noopener noreferrer">Veritasium</Link>,<Link href="https://www.youtube.com/c/vsauce"  style={{ color: "blue", textDecoration: "underline" }}   target="_blank" rel="noopener noreferrer">Vsauce</Link>,<Link href="https://www.youtube.com/c/numberphile"  style={{ color: "blue", textDecoration: "underline" }}   target="_blank" rel="noopener noreferrer">Numberphile</Link>,<Link href="https://www.youtube.com/c/3blue1brown"  style={{ color: "blue", textDecoration: "underline" }}   target="_blank" rel="noopener noreferrer">3Blue1Brown</Link>), and contributing to open-source projects.
             </p>
           </section>
-
+    
           <Separator className="bg-border" />
 
           <section>
@@ -207,14 +207,13 @@ export default function PortfolioPage() {
             <div className="grid gap-6" style={{height: "600px", overflowY: "scroll"}}>
               <Card className="border border-border rounded-none shadow-none">
                 <CardHeader>
-                  <CardTitle className="text-xl font-bold font-serif">Tooran Android Application (Personal)</CardTitle>
+                  <CardTitle className="text-xl font-bold font-serif">Hide Youtube Shorts (Firefox Extension)</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-base text-muted-foreground mb-2">
-                    A Flutter app for managing tasks within categories. Tooran allows users to create categories, add
-                    tasks, and manage them efficiently.
+                    A Firefox extension to hide YouTube Shorts, allowing users to overcome endless looping of shorts scrolling.
                   </p>
-                  <Link href="#" style={{background: 'black'}} className="text-white hover:underline p-2 text-sm mt-2 inline-block">
+                  <Link href="/projects#project-1" style={{background: 'black'}} className="text-white hover:underline p-2 text-sm mt-2 inline-block">
                     View Project
                   </Link>
                 </CardContent>

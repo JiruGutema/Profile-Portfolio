@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 interface ProjectDetailCardProps {
+  id: number
   title: string
   description: string
   technologies: string[]
@@ -12,6 +13,7 @@ interface ProjectDetailCardProps {
 }
 
 export function ProjectDetailCard({
+  id,
   title,
   description,
   technologies,
@@ -20,7 +22,7 @@ export function ProjectDetailCard({
   githubLink,
 }: ProjectDetailCardProps) {
   return (
-    <Card className="border border-border rounded-none shadow-none">
+    <Card className="border border-border rounded-none shadow-none" id={`project-${id}`}  >
       <CardHeader>
         <CardTitle className="text-2xl font-bold font-serif">{title}</CardTitle>
       </CardHeader>
@@ -42,7 +44,11 @@ export function ProjectDetailCard({
           {liveDemoLink && (
             <Link href={liveDemoLink} target="_blank" rel="noopener noreferrer">
               <Button className="rounded-none border border-border bg-primary text-primary-foreground hover:bg-primary/90">
-                View Live Demo
+                {title.includes("Firefox") ? (
+                  <span className="ml-2"> Install for Firefox</span>
+                ) :
+                  <span className="ml-2"> Live Demo</span>
+              }
               </Button>
             </Link>
           )}

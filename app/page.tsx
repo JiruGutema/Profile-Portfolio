@@ -56,17 +56,17 @@ export default function HomePage() {
           <div className="space-y-4">
             <article className="border-b border-border pb-4">
               <h3 className="text-xl font-semibold font-serif mb-1">
-                <Link href="/portfolio#projects" className="hover:underline">
-                  Tooran App: Revolutionizing Task Management
+                <Link href="/projects#project-1" className="hover:underline">
+                 Hide Youtube Shorts (Firefox Extension)
                 </Link>
               </h3>
               <p className="text-sm text-muted-foreground">
-                A look into Jiru Gutema's personal Flutter project for efficient task organization.
+                A Firefox extension to hide YouTube Shorts, allowing users to overcome endless looping of shorts scrolling.
               </p>
             </article>
             <article className="border-b border-border pb-4">
               <h3 className="text-xl font-semibold font-serif mb-1">
-                <Link href="/portfolio#contributions" className="hover:underline">
+                <Link href="/projects#project-10" className="hover:underline">
                   Open Source Impact: React-Next-Folder Creator
                 </Link>
               </h3>
@@ -120,12 +120,12 @@ export default function HomePage() {
             />
             <div>
               <h3 className="text-xl font-semibold font-serif mb-1">
-                <Link href="/portfolio#projects" className="hover:underline">
-                  JirenIntelli: A Glimpse into AI Chatbot Development
+                <Link href="https://github.com/JiruGutema/Stopwatch" className="hover:underline">
+                  My first github repository I created 😁
                 </Link>
               </h3>
               <p className="text-sm text-muted-foreground">
-                How Jiru utilized Gemini API to create an intelligent assistant.
+                A glimpse into Jiru's first GitHub repository, showcasing early coding adventures.
               </p>
             </div>
           </article>
