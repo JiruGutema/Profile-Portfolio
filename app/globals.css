@@ -4,39 +4,70 @@
 
 @layer base {
   :root {
-    --background: 25 40% 96%; /* Light sepia/off-white */
-    --foreground: 20 14.3% 4.1%; /* Dark text */
-    --card: 25 40% 96%;
+    --background: 0 0% 100%; /* Light mode: white */
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
     --card-foreground: 20 14.3% 4.1%;
-    --popover: 25 40% 96%;
+
+    --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
-    --primary: 20 14.3% 4.1%; /* Dark for primary elements like buttons */
-    --primary-foreground: 25 40% 96%; /* Light text on dark primary */
-    --secondary: 25 40% 90%; /* Slightly darker sepia for secondary elements */
+
+    --primary: 20 14.3% 4.1%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 40% 90%;
     --secondary-foreground: 20 14.3% 4.1%;
+
     --muted: 25 40% 90%;
     --muted-foreground: 20 14.3% 4.1%;
+
     --accent: 25 40% 90%;
     --accent-foreground: 20 14.3% 4.1%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 20 14.3% 4.1%; /* Dark border for newspaper lines */
+
+    --border: 20 14.3% 4.1%;
     --input: 20 14.3% 4.1%;
     --ring: 20 14.3% 4.1%;
+
     --radius: 0.5rem;
   }
-}
 
-@layer base {
-  body {
-    @apply bg-background text-foreground font-serif; /* Apply serif font globally */
+  /* Dark mode: GitHub-like (#0D1117) */
+  .dark {
+    --background: 217 28% 7%;  /* #0D1117 */
+    --foreground: 210 40% 98%; /* Light text */
+
+    --card: 216 28% 12%;       /* Slightly lighter card background */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 216 28% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 217 28% 7%;
+
+    --secondary: 217 28% 10%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 28% 10%;
+    --muted-foreground: 210 40% 80%;
+
+    --accent: 217 28% 10%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 28% 18%;
+    --input: 217 28% 18%;
+    --ring: 210 40% 98%;
+  
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-serif; /* Ensure headings also use serif */
+
+  body {
+    @apply bg-background text-foreground font-serif;
   }
 }

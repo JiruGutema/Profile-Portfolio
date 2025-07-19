@@ -213,7 +213,7 @@ export default function PortfolioPage() {
                   <p className="text-base text-muted-foreground mb-2">
                     A Firefox extension to hide YouTube Shorts, allowing users to overcome endless looping of shorts scrolling.
                   </p>
-                  <Link href="/projects#project-1" style={{background: 'black'}} className="text-white hover:underline p-2 text-sm mt-2 inline-block">
+                  <Link href="/projects#project-1"  className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block">
                     View Project
                   </Link>
                 </CardContent>
@@ -227,7 +227,7 @@ export default function PortfolioPage() {
                     A mini chatbot built using a Gemini free flash API, designed to assist users with basic tasks,
                     coding, and writing paragraphs.
                   </p>
-                  <Link href="#" style={{background: 'black'}} className="text-white hover:underline p-2 text-sm mt-2 inline-block">
+                  <Link href="#"  className="text-black border bg-white border-black hover:underline p-2 text-sm mt-2 inline-block">
                     View Project
                   </Link>
                 </CardContent>
@@ -243,7 +243,7 @@ export default function PortfolioPage() {
                     A full-stack web application for a house rental platform, built with Node.js, Express, MySQL, React,
                     and JWT.
                   </p>
-                  <Link href="#" style={{background: 'black'}} className="text-white hover:underline p-2 text-sm mt-2 inline-block">
+                  <Link href="#"  className="text-black hover:underline p-2 border border-black bg-white text-sm mt-2 inline-block">
                     View Project
                   </Link>
                 </CardContent>
@@ -259,7 +259,7 @@ export default function PortfolioPage() {
                     A full-stack restaurant management system built with Node.js, NestJS, TypeScript, and vanilla HTML.
                     Contributed as a database designer, frontend developer, and API integrator.
                   </p>
-                  <Link href="#" style={{background: 'black'}} className="text-white hover:underline p-2 text-sm mt-2 inline-block">
+                  <Link href="#"  className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block">
                     View Project
                   </Link>
                 </CardContent>
@@ -273,14 +273,14 @@ export default function PortfolioPage() {
                     Contributed as a backend and Flutter developer to the VolunteerConnect app, implementing features
                     using Express, MySQL, Flutter, JWT, and Firebase.
                   </p>
-                  <Link href="#" style={{background: 'black'}} className="text-white hover:underline p-2 text-sm mt-2 inline-block">
+                  <Link href="#"  className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block">
                     View Project
                   </Link>
                 </CardContent>
               </Card>
             </div>
           </section>
-          <Link href="/projects"  style={{background: 'black'}} className="text-white p-2 hover:underline text-sm mt-2 inline-block">
+          <Link href="/projects"   className="text-black bg-white border border-black p-2 hover:underline text-sm mt-2 inline-block">
             View Selected Projects
           </Link>
           <Separator className="bg-border" />

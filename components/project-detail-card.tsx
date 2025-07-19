@@ -43,7 +43,7 @@ export function ProjectDetailCard({
         <div className="flex flex-wrap gap-4 pt-2">
           {liveDemoLink && (
             <Link href={liveDemoLink} target="_blank" rel="noopener noreferrer">
-              <Button className="rounded-none border border-border bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button className="rounded-none border border-border text-primary-foreground hover:bg-primary/90">
                 {title.includes("Firefox") ? (
                   <span className="ml-2"> Install for Firefox</span>
                 ) :
