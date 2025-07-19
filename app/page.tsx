@@ -128,7 +128,7 @@ export default function HomePage() {
             <div>
               <h3 className="text-xl font-semibold font-serif mb-1">
                 <Link href="https://github.com/JiruGutema/Stopwatch" className="hover:underline">
-                  My first github repository I created 😁
+                  My first Github repository 🤔
                 </Link>
               </h3>
               <p className="text-sm text-muted-foreground">
