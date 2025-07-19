@@ -42,11 +42,18 @@ export default function HomePage() {
                 <p className="text-sm text-muted-foreground italic">
                   {'"Building the future, one line of code at a time."'}
                 </p>
-                <Link href="/portfolio">
-                  <Button className="mt-4 rounded-none border border-border bg-primary text-primary-foreground hover:bg-primary/90">
-                    Read Full Profile
-                  </Button>
+                <div className="links justify-between flex flex-wrap max-w-xs">
+                  <Link href="/portfolio">
+                    <Button className="mt-4 rounded-none border border-border bg-primary text-primary-foreground hover:bg-primary/90">
+                      Read Full Profile
+                    </Button>
+                  </Link>
+                  <Link href="/resume.pdf" className="" target="_blank" rel="noopener noreferrer">
+                    <Button className="mt-4 rounded-none border border-border bg-primary text-primary-foreground hover:bg-primary/90">
+                      Download Resume
+                    </Button>
                 </Link>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -92,13 +99,13 @@ export default function HomePage() {
         <div className="space-y-6">
           <h2 className="text-2xl font-bold font-serif border-b border-border pb-2">Tech Spotlight</h2>
           <article className="flex gap-4">
-            <Image
+          {/*   <Image
               src="/placeholder.svg?height=100&width=100"
               alt="Fullstack Development"
               width={100}
               height={100}
               className="object-cover border border-border shrink-0"
-            />
+            /> */}
             <div>
               <h3 className="text-xl font-semibold font-serif mb-1">
                 <Link href="/portfolio#skills" className="hover:underline">
@@ -111,13 +118,13 @@ export default function HomePage() {
             </div>
           </article>
           <article className="flex gap-4">
-            <Image
+   {/*          <Image
               src="/placeholder.svg?height=100&width=100"
               alt="AI Chatbot"
               width={100}
               height={100}
               className="object-cover border border-border shrink-0"
-            />
+            /> */}
             <div>
               <h3 className="text-xl font-semibold font-serif mb-1">
                 <Link href="https://github.com/JiruGutema/Stopwatch" className="hover:underline">
@@ -133,13 +140,13 @@ export default function HomePage() {
         <div className="space-y-6">
           <h2 className="text-2xl font-bold font-serif border-b border-border pb-2">Student Corner</h2>
           <article className="flex gap-4">
-            <Image
+         {/*    <Image
               src="/placeholder.svg?height=100&width=100"
               alt="DSA"
               width={100}
               height={100}
               className="object-cover border border-border shrink-0"
-            />
+            /> */}
             <div>
               <h3 className="text-xl font-semibold font-serif mb-1">
                 <Link href="/portfolio#education" className="hover:underline">
@@ -152,13 +159,13 @@ export default function HomePage() {
             </div>
           </article>
           <article className="flex gap-4">
-            <Image
+          {/*   <Image
               src="/placeholder.svg?height=100&width=100"
               alt="Cyber Security"
               width={100}
               height={100}
               className="object-cover border border-border shrink-0"
-            />
+            /> */}
             <div>
               <h3 className="text-xl font-semibold font-serif mb-1">
                 <Link href="/portfolio#education" className="hover:underline">
