@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Jiru Gutema | Software Engineer & Fullstack Developer Portfolio",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.png",
   },
   description:
     "The official online portfolio of Jiru Gutema, a software engineer and fullstack developer student showcasing projects, skills, and experience.",
