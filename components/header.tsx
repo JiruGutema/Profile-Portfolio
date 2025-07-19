@@ -50,7 +50,7 @@ export function Header() {
              <button
       onClick={toggleTheme}
       className={`relative w-7 h-7 rounded-full transition-colors duration-300
-        ${isDark ? "bg-blue-600" : "bg-gray-300"}`}
+        ${isDark ? "bg-slate-800" : "bg-gray-300"}`}
     >
       <span
         className={`absolute left-1 top-1 w-5 h-5  rounded-full transition-transform duration-300
@@ -110,20 +110,18 @@ export function Header() {
           >
             Contact
           </Link>
-
+          
             <button
-              onClick={() => {
-                toggleTheme();
-                setMenuOpen(false);
-              }}
-              className={`relative w-7 h-7 ml-6 mr-6 rounded-full transition-colors duration-300
-                ${isDark ? "bg-blue-600" : "bg-gray-300"}`}
-            >
-              <span
-                className={`absolute left-1 top-1 w-5 h-5 rounded-full transition-transform duration-300
-                  ${isDark ? "bg-white" : "bg-black"}`}
-              />
-            </button>
+          onClick={toggleTheme}
+          className={`relative w-7 h-7 ml-6 mr-6 rounded-full transition-colors duration-300
+
+          ${isDark ? "bg-slate-800" : "bg-gray-300"}`}
+        >
+          <span
+          className={`absolute left-1 top-1 w-5 h-5  rounded-full transition-transform duration-300
+          ${isDark ? "bg-white" : "bg-black"}`}
+          />
+          </button>
         </nav>
       )}
     </header>
