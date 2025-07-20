@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+  /* --background: 0 0% 100%; */
 @layer base {
   :root {
-    --background: 0 0% 100%; /* Light mode: white */
+    --background: 0 0% 90%;
     --foreground: 20 14.3% 4.1%;
 
-    --card: 0 0% 100%;
+    --card: 0 0% 95%;
     --card-foreground: 20 14.3% 4.1%;
 
     --popover: 0 0% 100%;

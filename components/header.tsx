@@ -38,13 +38,13 @@ export function Header() {
           <Link href="/" className="text-lg font-semibold hover:underline">
             Home
           </Link>
-          <Link href="/portfolio" className="text-lg font-semibold hover:underline">
-            Portfolio
+          <Link href="/profile" className="text-lg font-semibold hover:underline">
+            Profile
           </Link>
           <Link href="/projects" className="text-lg font-semibold hover:underline">
             Projects
           </Link>
-          <Link href="/portfolio#contact" className="text-lg font-semibold hover:underline">
+          <Link href="/profile#contact" className="text-lg font-semibold hover:underline">
             Contact
           </Link>
              <button
@@ -90,11 +90,11 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="/portfolio"
+            href="/profile"
             className="block py-2 pr-6 text-lg font-semibold hover:underline"
             onClick={() => setMenuOpen(false)}
           >
-            Portfolio
+            Profile
           </Link>
           <Link
             href="/projects"
@@ -104,16 +104,19 @@ export function Header() {
             Projects
           </Link>
           <Link
-            href="/portfolio#contact"
+            href="/profile#contact"
             className="block py-2 pr-6 text-lg font-semibold hover:underline"
             onClick={() => setMenuOpen(false)}
           >
             Contact
           </Link>
-          
-            <button
-          onClick={toggleTheme}
-          className={`relative w-7 h-7 ml-6 mr-6 rounded-full transition-colors duration-300
+
+          <button
+            onClick={() => {
+              toggleTheme();
+              setMenuOpen(false);
+            }}
+            className={`relative w-7 h-7 ml-6 mr-6 rounded-full transition-colors duration-300
 
           ${isDark ? "bg-slate-800" : "bg-gray-300"}`}
         >

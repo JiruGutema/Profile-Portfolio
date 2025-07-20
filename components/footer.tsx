@@ -1,3 +1,4 @@
+
 export function Footer() {
   return (
     <footer className="py-8 border-t border-border mt-8 text-center text-sm text-muted-foreground">

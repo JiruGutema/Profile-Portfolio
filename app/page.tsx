@@ -43,7 +43,7 @@ export default function HomePage() {
                   {'"Building the future, one line of code at a time."'}
                 </p>
                 <div className="links justify-between flex flex-wrap max-w-xs">
-                  <Link href="/portfolio">
+                  <Link href="/profile">
                     <Button className="mt-4 rounded-none border border-border bg-primary text-primary-foreground hover:bg-primary/90">
                       Read Full Profile
                     </Button>
@@ -79,16 +79,6 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-muted-foreground">
                 Exploring Jiru's contribution to a Node.js library enhancing developer experience.
-              </p>
-            </article>
-            <article>
-              <h3 className="text-xl font-semibold font-serif mb-1">
-                <Link href="/portfolio#experience" className="hover:underline">
-                  INSA Summer Camp: Cryptography in Action
-                </Link>
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Highlights from Jiru's final graduation project on file encryption web applications.
               </p>
             </article>
           </div>
