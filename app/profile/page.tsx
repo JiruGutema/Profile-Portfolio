@@ -239,7 +239,7 @@ export default function PortfolioPage() {
                   Coding Academy (backed by Google)
                 </h3>
                 <p className="text-base italic text-muted-foreground">
-                  African to Silicon Valley | 01/2025 – 01/2026
+                  African to Silicon Valley | 01/2025 – 04/2025
                 </p>
                 <p className="text-base italic text-muted-foreground">
                   Addis Ababa, Ethiopia

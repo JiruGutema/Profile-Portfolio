@@ -13,7 +13,7 @@ export default function HomePage() {
       <section className="grid md:grid-cols-3 gap-8 border-b border-border pb-6 mb-6">
         <div className="md:col-span-2 space-y-6">
           <h2 className="text-3xl font-bold font-serif border-b border-border pb-2">
-            Jiru Gutema, The Aspiring Software Engineer and Fullstack Developer
+            The Aspiring Software Engineer and Fullstack Developer
           </h2>
           {/* Updated PortfolioCard to reflect Jiru Gutema's details */}
           <Card className="border border-border rounded-none shadow-none">
