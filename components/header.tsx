@@ -47,16 +47,16 @@ export function Header() {
           <Link href="/profile#contact" className="text-lg font-semibold hover:underline">
             Contact
           </Link>
-             <button
-      onClick={toggleTheme}
-      className={`relative w-7 h-7 rounded-full transition-colors duration-300
-        ${isDark ? "bg-slate-800" : "bg-gray-300"}`}
-    >
-      <span
-        className={`absolute left-1 top-1 w-5 h-5  rounded-full transition-transform duration-300
-        ${isDark ? "bg-white" : "bg-black"}`}
-      />
-      </button>
+            <button
+              onClick={toggleTheme}
+              className={`relative w-7 h-7 rounded-full transition-colors duration-300
+                ${isDark ? "bg-[#1B1E1F]" : "bg-gray-300"}`}
+            >
+              <span
+                className={`absolute left-1 top-1 w-5 h-5 rounded-full transition-transform duration-300
+                  ${isDark ? "bg-white" : "bg-[#1B1E1F]"}`}
+              />
+            </button>
         </nav>
 
         {/* Dark mode toggle */}

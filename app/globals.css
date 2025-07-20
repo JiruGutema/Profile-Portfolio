@@ -34,13 +34,15 @@
 
     --radius: 0.5rem;
   }
-
+  /*--background: 217 28% 7%;
+   --card: 216 28% 12%; github theme card and background*/   
   /* Dark mode: GitHub-like (#0D1117) */
   .dark {
-    --background: 217 28% 7%;  /* #0D1117 */
+    --background: 210 6% 10%;
     --foreground: 210 40% 98%; /* Light text */
 
-    --card: 216 28% 12%;       /* Slightly lighter card background */
+  
+    --card: 200 7% 11%;      /* Slightly lighter card background */
     --card-foreground: 210 40% 98%;
 
     --popover: 216 28% 12%;
