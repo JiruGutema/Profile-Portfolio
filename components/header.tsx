@@ -36,16 +36,10 @@ export function Header() {
         {/* Desktop nav */}
         <nav className="hidden md:flex space-x-6">
           <Link href="/" className="text-lg font-semibold hover:underline">
-            Home
-          </Link>
-          <Link href="/profile" className="text-lg font-semibold hover:underline">
-            Profile
+           Home 
           </Link>
           <Link href="/projects" className="text-lg font-semibold hover:underline">
             Projects
-          </Link>
-          <Link href="/profile#contact" className="text-lg font-semibold hover:underline">
-            Contact
           </Link>
             <button
               onClick={toggleTheme}
@@ -90,25 +84,11 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="/profile"
-            className="block py-2 pr-6 text-lg font-semibold hover:underline"
-            onClick={() => setMenuOpen(false)}
-          >
-            Profile
-          </Link>
-          <Link
             href="/projects"
             className="block py-2 pr-6 text-lg font-semibold hover:underline"
             onClick={() => setMenuOpen(false)}
           >
             Projects
-          </Link>
-          <Link
-            href="/profile#contact"
-            className="block py-2 pr-6 text-lg font-semibold hover:underline"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
           </Link>
 
           <button
