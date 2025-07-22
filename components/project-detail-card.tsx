@@ -44,11 +44,13 @@ export function ProjectDetailCard({
           {liveDemoLink && (
             <Link href={liveDemoLink} target="_blank" rel="noopener noreferrer">
               <Button className="rounded-none border border-border text-primary-foreground hover:bg-primary/90">
-                {title.includes("Firefox") ? (
-                  <span className="ml-2"> Install for Firefox</span>
-                ) :
-                  <span className="ml-2"> Live Demo</span>
-              }
+              {title.includes("Firefox") ? (
+                <span className="ml-2">Install for Firefox</span>
+              ) : title.includes("Tooran") ? (
+                <span className="ml-2">Install for Android</span>
+              ) : (
+                <span className="ml-2">Live Demo</span>
+              )}
               </Button>
             </Link>
           )}
