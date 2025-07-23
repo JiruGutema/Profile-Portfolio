@@ -61,6 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="22Myp3cGeJIavTM3UD5CbQFQm32ClaDhSl1_HPJzMxA" />
+      </head>
       <body className={inter.className} style={{ scrollBehavior: "smooth" }}>
         <Header />
         <main className="min-h-[calc(100vh-144px)]">
