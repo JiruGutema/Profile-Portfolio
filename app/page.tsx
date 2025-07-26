@@ -540,10 +540,10 @@ export default function PortfolioPage() {
                   </p>
                   <p className="text-sm font-semibold text-muted-foreground">
                     -{" "}
-                    <a href="https://www.linkedin.com/in/anteneh-yimmam0/">
+                    <a href="https://www.linkedin.com/in/anteneh-yimmam0/" className="text-blue-700 underline">
                       Anteneh Yimmam
                     </a>
-                    , A Education Lead at Ethioware EdTech Initiative
+                    , A Education Lead at <a href="https://www.linkedin.com/company/ethioware" className="text-blue-700 underline">Ethioware EdTech Initiative</a>
                   </p>
                 </CardContent>
               </Card>
