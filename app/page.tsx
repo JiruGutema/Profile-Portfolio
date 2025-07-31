@@ -17,7 +17,7 @@ export default function PortfolioPage() {
           project portfolio of an aspiring software engineer.
         </p>
         <p className="text-sm text-muted-foreground mt-2">
-          Last updated on July 15, 2025
+          Last updated on July 31, 2025
         </p>
       </section>
 
@@ -112,7 +112,7 @@ export default function PortfolioPage() {
             </CardHeader>
             <CardContent className="">
               <h3 className="text-lg font-semibold">Programming Languages:</h3>
-              <p className="text-base mt-0">JavaScript, Python, Java</p>
+              <p className="text-base mt-0">JavaScript, Python, Java, Golang</p>
               <h3 className="text-lg mt-3 font-semibold">
                 Frameworks & Libraries:
               </h3>
