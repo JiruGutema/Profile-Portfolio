@@ -112,7 +112,7 @@ export default function PortfolioPage() {
             </CardHeader>
             <CardContent className="">
               <h3 className="text-lg font-semibold">Programming Languages:</h3>
-              <p className="text-base mt-0">JavaScript, Python, Java, Golang</p>
+              <p className="text-base mt-0">JavaScript, Golang, Python, Python</p>
               <h3 className="text-lg mt-3 font-semibold">
                 Frameworks & Libraries:
               </h3>
