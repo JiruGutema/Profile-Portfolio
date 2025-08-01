@@ -13,7 +13,7 @@ export default function ProjectsPage() {
           endeavors and open-source contributions.
         </p>
         <p className="text-sm text-muted-foreground mt-2">
-             Last updated on July 15, 2025
+             Last updated on July 31, 2025
         </p>
       </section>
 
