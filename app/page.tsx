@@ -73,7 +73,7 @@ export default function PortfolioPage() {
                   </Button>
                 </Link>
                 <Link
-                  href="https://linkedin.com/in/jirugutema"
+                  href="https://linkedin.com/in/jiru-gutema"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -579,7 +579,7 @@ export default function PortfolioPage() {
                   </Button>
                 </Link>
                 <Link
-                  href="https://linkedin.com/in/jirugutema"
+                  href="https://linkedin.com/in/jiru-gutema"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
