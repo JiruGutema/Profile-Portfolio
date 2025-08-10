@@ -443,26 +443,7 @@ export default function PortfolioPage() {
                   </Link>
                 </CardContent>
               </Card>
-              <Card className="border border-border rounded-none shadow-none">
-                <CardHeader>
-                  <CardTitle className="text-xl font-bold font-serif">
-                    VolunteerConnect (Group Project)
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-base text-muted-foreground mb-2">
-                    Contributed as a backend and Flutter developer to the
-                    VolunteerConnect app, implementing features using Express,
-                    MySQL, Flutter, JWT, and Firebase.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
-                  >
-                    View Project
-                  </Link>
-                </CardContent>
-              </Card>
+    
             </div>
           </section>
           <Link
@@ -492,7 +473,7 @@ export default function PortfolioPage() {
                     creation.
                   </p>
                   <Link
-                    href="#"
+                    href="https://github.com/JiruGutema/react-next_folder"
                     className="text-primary hover:underline text-sm mt-2 inline-block"
                   >
                     View Contribution
@@ -511,7 +492,7 @@ export default function PortfolioPage() {
                     database host) by adding an Afaan Oromoo Translation pool.
                   </p>
                   <Link
-                    href="#"
+                    href="https://github.com/mpopp75/db4free-net-l10n/graphs/contributors"
                     className="text-primary hover:underline text-sm mt-2 inline-block"
                   >
                     View Contribution
