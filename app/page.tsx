@@ -205,6 +205,12 @@ export default function PortfolioPage() {
               </Link>
               ), and contributing to open-source projects.
             </p>
+              <br />
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Button className="rounded-none border border-border text-primary-foreground hover:bg-primary/90">
+                <span className="ml-2">View Resume</span>
+              </Button>
+            </Link>
           </section>
 
           <Separator className="bg-border" />
