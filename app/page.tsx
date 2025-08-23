@@ -187,15 +187,6 @@ export default function PortfolioPage() {
               </Link>
               ,
               <Link
-                href="https://www.youtube.com/c/numberphile"
-                style={{ color: "blue", textDecoration: "underline" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Numberphile
-              </Link>
-              ,
-              <Link
                 href="https://www.youtube.com/c/3blue1brown"
                 style={{ color: "blue", textDecoration: "underline" }}
                 target="_blank"
