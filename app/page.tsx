@@ -96,7 +96,11 @@ export default function PortfolioPage() {
                     size="icon"
                     className="rounded-full border-border bg-transparent"
                   >
-                    <Code className="h-5 w-5" />
+                    <img
+                      src="https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png"
+                      width={20}
+                      alt=""
+                    />
                     <span className="sr-only">Leetcode</span>
                   </Button>
                 </Link>
@@ -112,7 +116,9 @@ export default function PortfolioPage() {
             </CardHeader>
             <CardContent className="">
               <h3 className="text-lg font-semibold">Programming Languages:</h3>
-              <p className="text-base mt-0">JavaScript, Golang, Python, Python</p>
+              <p className="text-base mt-0">
+                JavaScript, Golang, Python, Python
+              </p>
               <h3 className="text-lg mt-3 font-semibold">
                 Frameworks & Libraries:
               </h3>
@@ -196,7 +202,7 @@ export default function PortfolioPage() {
               </Link>
               ), and contributing to open-source projects.
             </p>
-              <br />
+            <br />
             <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
               <Button className="rounded-none border border-border text-primary-foreground hover:bg-primary/90">
                 <span className="ml-2">View Resume</span>
@@ -355,12 +361,34 @@ export default function PortfolioPage() {
 
           <section>
             <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
-              Projects
+              Top Picks Projects
             </h2>
             <div
               className="grid gap-6"
               style={{ height: "600px", overflowY: "scroll" }}
             >
+              <Card className="border border-border rounded-none shadow-none">
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold font-serif">
+                    Tooran (Task Management Android)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-base text-muted-foreground mb-2">
+                    Tooran is a comprehensive task management application
+                    designed for systematic organization of daily tasks and
+                    responsibilities. This application enables efficient
+                    categorization of tasks, facilitating streamlined management
+                    of both professional and personal workflows.
+                  </p>
+                  <Link
+                    href="https://tooran.vercel.app"
+                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
+                  >
+                    Install for Android
+                  </Link>
+                </CardContent>
+              </Card>
               <Card className="border border-border rounded-none shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
@@ -370,84 +398,70 @@ export default function PortfolioPage() {
                 <CardContent>
                   <p className="text-base text-muted-foreground mb-2">
                     A Firefox extension to hide YouTube Shorts, allowing users
-                    to overcome endless looping of shorts scrolling.
+                    to overcome endless looping of shorts scrolling. This
+                    extension provides a seamless viewing experience by
+                    eliminating distractions and focusing on the main content.
                   </p>
                   <Link
                     href="/projects#project-1"
                     className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
                   >
-                    View Project
+                    Install for Firefox
                   </Link>
                 </CardContent>
               </Card>
               <Card className="border border-border rounded-none shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
-                    JirenIntelli (Personal)
+                    Swagger-Html
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-base text-muted-foreground mb-2">
-                    A mini chatbot built using a Gemini free flash API, designed
-                    to assist users with basic tasks, coding, and writing
-                    paragraphs.
+                    I developed swagger-html, a npm package to export your
+                    Swagger/OpenAPI docs as a single offline HTML file for easy
+                    sharing and viewing no server required! The package makes it
+                    simple to generate and share API documentation, enhancing
+                    collaboration among developers.
                   </p>
                   <Link
-                    href="#"
+                    href="https://www.npmjs.com/package/swagger-html"
                     className="text-black border bg-white border-black hover:underline p-2 text-sm mt-2 inline-block"
                   >
-                    View Project
+                    Go to Documentation
                   </Link>
                 </CardContent>
               </Card>
               <Card className="border border-border rounded-none shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
-                    House Rental Web Application (Group Project)
+                    Web Marker Extension
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-base text-muted-foreground mb-2">
-                    A full-stack web application for a house rental platform,
-                    built with Node.js, Express, MySQL, React, and JWT.
+                    I Modified a Firefox extension that allows users to draw and
+                    mark up webpages for better collaboration and feedback. the
+                    extension was removed previously from the firefox addon
+                    store due to some policy violation which was built by{" "}
+                    <strong>Daniel</strong>. I fixed the issues as well as added
+                    more functionalities and then republished it under my name.
                   </p>
                   <Link
-                    href="#"
+                    href="https://addons.mozilla.org/en-US/firefox/addon/draw-and-mark-a-webpage/"
                     className="text-black hover:underline p-2 border border-black bg-white text-sm mt-2 inline-block"
                   >
-                    View Project
+                    Install for Firefox
                   </Link>
                 </CardContent>
               </Card>
-              <Card className="border border-border rounded-none shadow-none">
-                <CardHeader>
-                  <CardTitle className="text-xl font-bold font-serif">
-                    Restaurant Management System (Group Project)
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-base text-muted-foreground mb-2">
-                    A full-stack restaurant management system built with
-                    Node.js, NestJS, TypeScript, and vanilla HTML. Contributed
-                    as a database designer, frontend developer, and API
-                    integrator.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
-                  >
-                    View Project
-                  </Link>
-                </CardContent>
-              </Card>
-    
             </div>
           </section>
           <Link
             href="/projects"
             className="text-black bg-white border border-black p-2 hover:underline text-sm mt-2 inline-block"
           >
-            View Selected Projects
+            View Other Selected Projects
           </Link>
           <Separator className="bg-border" />
 
@@ -518,10 +532,19 @@ export default function PortfolioPage() {
                   </p>
                   <p className="text-sm font-semibold text-muted-foreground">
                     -{" "}
-                    <a href="https://www.linkedin.com/in/anteneh-yimmam0/" className="text-blue-700 underline">
+                    <a
+                      href="https://www.linkedin.com/in/anteneh-yimmam0/"
+                      className="text-blue-700 underline"
+                    >
                       Anteneh Yimmam
                     </a>
-                    , A Education Lead at <a href="https://www.linkedin.com/company/ethioware" className="text-blue-700 underline">Ethioware EdTech Initiative</a>
+                    , A Education Lead at{" "}
+                    <a
+                      href="https://www.linkedin.com/company/ethioware"
+                      className="text-blue-700 underline"
+                    >
+                      Ethioware EdTech Initiative
+                    </a>
                   </p>
                 </CardContent>
               </Card>
@@ -614,7 +637,11 @@ export default function PortfolioPage() {
                     size="icon"
                     className="rounded-full border-border bg-transparent"
                   >
-                    <Code className="h-5 w-5" />
+                    <img
+                      src="https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png"
+                      width={20}
+                      alt=""
+                    />
                     <span className="sr-only">Leetcode</span>
                   </Button>
                 </Link>
