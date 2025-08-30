@@ -4,12 +4,13 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Mail, Github, Linkedin, Globe, Code, X, Phone } from "lucide-react"; // Added Globe and Code icons
+import PublicContributionCard from "@/components/public-contribution-card";
 
 export default function PortfolioPage() {
   return (
     <div className="grid gap-8 py-4">
       <section className="text-center border-b border-border pb-6 mb-6">
-        <h1 className="text-4xl md:text-5xl font-bold font-serif leading-tight mb-2">
+        <h1 className="text-sm md:text-5xl font-bold font-serif leading-tight mb-2">
           Software Engineer | Fullstack Developer
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -27,7 +28,7 @@ export default function PortfolioPage() {
             <CardContent className="p-6 text-center">
               <div className="relative w-32 h-32 mx-auto mb-4">
                 <Image
-                  src="/images/small_profile.jpg"
+                  src="/images/small_profile.png"
                   alt="Jiru Gutema Profile"
                   layout="fill"
                   objectFit="cover"
@@ -485,8 +486,8 @@ export default function PortfolioPage() {
                   </p>
                   <Link
                     href="https://github.com/JiruGutema/react-next_folder"
-                    className="text-primary hover:underline text-sm mt-2 inline-block"
-                  >
+                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block">
+            
                     View Contribution
                   </Link>
                 </CardContent>
@@ -504,7 +505,7 @@ export default function PortfolioPage() {
                   </p>
                   <Link
                     href="https://github.com/mpopp75/db4free-net-l10n/graphs/contributors"
-                    className="text-primary hover:underline text-sm mt-2 inline-block"
+                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
                   >
                     View Contribution
                   </Link>
@@ -513,6 +514,77 @@ export default function PortfolioPage() {
             </div>
           </section>
 
+          <Separator className="bg-border" />
+     <section>
+            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+              Public Activity
+            </h2>
+            <div className="grid gap-6">
+              <Card className="border border-border rounded-none shadow-none">
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold font-serif">
+                    Backend and DSA Mentor at <Link className="text-blue-600 hover:underline" href="https://nexustutorial.vercel.app/course/backend-dev-for-beginners">Nexus Tutorial</Link>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {/* DSA */}
+                  <p className="text-base text-muted-foreground mb-2">
+                    Mentoring students in Data Structures and Algorithms,
+                    helping them build a strong foundation in problem-solving
+                    skills.
+                  </p>
+                  {/* Backend */}
+                  <p>
+                    Teaching backend development concepts, including RESTful APIs,
+                    database management, and server-side programming.
+                  </p>
+                  <Link
+                    href="https://nexustutorial.vercel.app/course/backend-dev-for-beginners"
+                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block">
+            
+                    View Course
+                  </Link>
+                </CardContent>
+              </Card>
+              <Card className="border border-border rounded-none shadow-none">
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold font-serif">
+                    Frontend Mentor at <Link className="text-blue-600 hover:underline" href="https://gdg.community.dev/">GDG AAU (Formerly GDSC)</Link>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-base text-muted-foreground mb-2">
+                    I was mentoring students in Frontend Development, covering
+                    topics such as HTML, CSS, JavaScript, and React.
+                  </p>
+                  <Link
+                    href="https://www.linkedin.com/posts/jiru-gutema_a-certificate-from-gdsc-activity-7250769310120390656-5vNd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEd-fxwByr7erWREUfXW94sBGM8_vdEa7PM"
+                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
+                  >
+                    View Certificate
+                  </Link>
+                </CardContent>
+              </Card>
+              <Card className="border border-border rounded-none shadow-none">
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold font-serif">
+                    Core Team at  <Link className="text-blue-600 hover:underline" href="https://www.meetup.com/aws-cloud-club-at-addis-ababa-university/">AWS Cloud Club AAU</Link>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-base text-muted-foreground mb-2">
+                    As a core team member of the AWS Cloud Club at AAU, I participated in various cloud computing projects and workshops, helping to promote AWS technologies among students at AAU.
+                  </p>
+                  <Link
+                    href="https://www.credly.com/badges/8ba9a9c5-14e9-4a43-9f8f-3695e44c05a3"
+                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
+                  >
+                    Check Certificate
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
           <Separator className="bg-border" />
 
           <section>

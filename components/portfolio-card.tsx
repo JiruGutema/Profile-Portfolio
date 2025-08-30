@@ -15,7 +15,7 @@ export function PortfolioCard() {
       <CardContent className="grid md:grid-cols-2 gap-4">
         <div className="relative w-full h-48 md:h-auto">
           <Image
-            src="/images/profile.jpg"
+            src="/images/profile.png"
             alt="Profile Picture"
             layout="fill"
             objectFit="cover"
