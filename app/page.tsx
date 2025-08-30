@@ -4,7 +4,6 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Mail, Github, Linkedin, Globe, Code, X, Phone } from "lucide-react"; // Added Globe and Code icons
-import PublicContributionCard from "@/components/public-contribution-card";
 
 export default function PortfolioPage() {
   return (
@@ -26,7 +25,7 @@ export default function PortfolioPage() {
         <div className="md:col-span-1 space-y-6">
           <Card className="border border-border rounded-none shadow-none">
             <CardContent className="p-6 text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4">
+              <div className="relative w-48 h-48 mx-auto mb-4">
                 <Image
                   src="/images/small_profile.png"
                   alt="Jiru Gutema Profile"
