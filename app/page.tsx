@@ -22,7 +22,7 @@ export default function PortfolioPage() {
       </section>
 
       <div className="grid md:grid-cols-3 gap-8">
-        <div className="md:col-span-1 space-y-6">
+        <div className="md:col-span-1 space-y-6 min-w-56">
           <Card className="border border-border rounded-none shadow-none">
             <CardContent className="p-6 text-center">
               <div className="relative w-48 h-48 mx-auto mb-4">

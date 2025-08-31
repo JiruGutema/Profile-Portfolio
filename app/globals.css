@@ -71,5 +71,31 @@
 
   body {
     @apply bg-background text-foreground font-serif;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* Mobile: width 100% */
+  @media (max-width: 640px) {
+    body {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  /* Tablet: width 80% */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    body {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+
+  /* Desktop: width 80% */
+  @media (min-width: 1025px) {
+    body {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }
