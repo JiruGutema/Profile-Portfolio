@@ -9,7 +9,7 @@ export default function PortfolioPage() {
   return (
     <div className="grid gap-8 py-4">
       <section className="text-center border-b border-border pb-6 mb-6">
-        <h1 className="text-sm md:text-5xl font-bold font-serif leading-tight mb-2">
+        <h1 className="text-xl md:text-5xl font-bold font-serif leading-tight mb-2">
           Software Engineer | Fullstack Developer
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -275,6 +275,7 @@ export default function PortfolioPage() {
               </article>
             </div>
           </section>
+          <Separator className="bg-border" />
           <section>
             <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
               Experience
@@ -485,8 +486,8 @@ export default function PortfolioPage() {
                   </p>
                   <Link
                     href="https://github.com/JiruGutema/react-next_folder"
-                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block">
-            
+                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
+                  >
                     View Contribution
                   </Link>
                 </CardContent>
@@ -514,7 +515,7 @@ export default function PortfolioPage() {
           </section>
 
           <Separator className="bg-border" />
-     <section>
+          <section>
             <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
               Public Activity
             </h2>
@@ -522,7 +523,13 @@ export default function PortfolioPage() {
               <Card className="border border-border rounded-none shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
-                    Backend and DSA Mentor at <Link className="text-blue-600 hover:underline" href="https://nexustutorial.vercel.app/course/backend-dev-for-beginners">Nexus Tutorial</Link>
+                    Backend and DSA Mentor at{" "}
+                    <Link
+                      className="text-blue-600 hover:underline"
+                      href="https://nexustutorial.vercel.app/course/backend-dev-for-beginners"
+                    >
+                      Nexus Tutorial
+                    </Link>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -534,13 +541,13 @@ export default function PortfolioPage() {
                   </p>
                   {/* Backend */}
                   <p>
-                    Teaching backend development concepts, including RESTful APIs,
-                    database management, and server-side programming.
+                    Teaching backend development concepts, including RESTful
+                    APIs, database management, and server-side programming.
                   </p>
                   <Link
                     href="https://nexustutorial.vercel.app/course/backend-dev-for-beginners"
-                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block">
-            
+                    className="text-black bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
+                  >
                     View Course
                   </Link>
                 </CardContent>
@@ -548,7 +555,13 @@ export default function PortfolioPage() {
               <Card className="border border-border rounded-none shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
-                    Frontend Mentor at <Link className="text-blue-600 hover:underline" href="https://gdg.community.dev/">GDG AAU (Formerly GDSC)</Link>
+                    Frontend Mentor at{" "}
+                    <Link
+                      className="text-blue-600 hover:underline"
+                      href="https://gdg.community.dev/"
+                    >
+                      GDG AAU (Formerly GDSC)
+                    </Link>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -567,12 +580,21 @@ export default function PortfolioPage() {
               <Card className="border border-border rounded-none shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
-                    Core Team at  <Link className="text-blue-600 hover:underline" href="https://www.meetup.com/aws-cloud-club-at-addis-ababa-university/">AWS Cloud Club AAU</Link>
+                    Core Team at{" "}
+                    <Link
+                      className="text-blue-600 hover:underline"
+                      href="https://www.meetup.com/aws-cloud-club-at-addis-ababa-university/"
+                    >
+                      AWS Cloud Club AAU
+                    </Link>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-base text-muted-foreground mb-2">
-                    As a core team member of the AWS Cloud Club at AAU, I participated in various cloud computing projects and workshops, helping to promote AWS technologies among students at AAU.
+                    As a core team member of the AWS Cloud Club at AAU, I
+                    participated in various cloud computing projects and
+                    workshops, helping to promote AWS technologies among
+                    students at AAU.
                   </p>
                   <Link
                     href="https://www.credly.com/badges/8ba9a9c5-14e9-4a43-9f8f-3695e44c05a3"
