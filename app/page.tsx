@@ -12,10 +12,7 @@ export default function PortfolioPage() {
         <h1 className="text-xl md:text-5xl font-bold font-serif leading-tight mb-2">
           Software Engineer | Fullstack Developer
         </h1>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          A detailed look into the academic journey, technical prowess, and
-          project portfolio of an aspiring software engineer.
-        </p>
+      
         <p className="text-sm text-muted-foreground mt-2">
           Last updated on July 31, 2025
         </p>
@@ -23,7 +20,7 @@ export default function PortfolioPage() {
 
       <div className="grid md:grid-cols-3 gap-8">
         <div className="md:col-span-1 space-y-6 min-w-56">
-          <Card className="border border-border rounded-none shadow-none">
+          <Card className="border border-border rounded-sm shadow-none">
             <CardContent className="p-6 text-center">
               <div className="relative w-48 h-48 mx-auto mb-4">
                 <Image
@@ -108,7 +105,7 @@ export default function PortfolioPage() {
             </CardContent>
           </Card>
 
-          <Card className="border border-border rounded-none shadow-none">
+          <Card className="border border-border rounded-sm shadow-none">
             <CardHeader>
               <CardTitle className="text-2xl font-bold font-serif">
                 Skills
@@ -140,7 +137,7 @@ export default function PortfolioPage() {
             </CardContent>
           </Card>
 
-          <Card className="border border-border rounded-none shadow-none">
+          <Card className="border border-border rounded-sm shadow-none">
             <CardHeader>
               <CardTitle className="text-2xl font-bold font-serif">
                 Languages
@@ -156,7 +153,7 @@ export default function PortfolioPage() {
 
         <div className="md:col-span-2 space-y-8">
           <section>
-            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+            <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
               About Me
             </h2>
             <p className="text-base leading-relaxed">
@@ -204,7 +201,7 @@ export default function PortfolioPage() {
             </p>
             <br />
             <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <Button className="rounded-none border border-border text-primary-foreground hover:bg-primary/90">
+              <Button className="rounded-sm border border-border text-primary-foreground hover:bg-primary/90">
                 <span className="ml-2">View Resume</span>
               </Button>
             </Link>
@@ -213,7 +210,7 @@ export default function PortfolioPage() {
           <Separator className="bg-border" />
 
           <section>
-            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+            <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
               Education
             </h2>
             <div className="space-y-4">
@@ -277,7 +274,7 @@ export default function PortfolioPage() {
           </section>
           <Separator className="bg-border" />
           <section>
-            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+            <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
               Experience
             </h2>
             <div className="space-y-4">
@@ -361,14 +358,14 @@ export default function PortfolioPage() {
           <Separator className="bg-border" />
 
           <section>
-            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+            <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
               Top Picks Projects
             </h2>
             <div
               className="grid gap-6"
               style={{ height: "600px", overflowY: "scroll" }}
             >
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     Tooran (Task Management Android)
@@ -390,7 +387,7 @@ export default function PortfolioPage() {
                   </Link>
                 </CardContent>
               </Card>
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     Hide Youtube Shorts (Firefox Extension)
@@ -411,7 +408,7 @@ export default function PortfolioPage() {
                   </Link>
                 </CardContent>
               </Card>
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     Swagger-Html
@@ -433,7 +430,7 @@ export default function PortfolioPage() {
                   </Link>
                 </CardContent>
               </Card>
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     Web Marker Extension
@@ -467,11 +464,11 @@ export default function PortfolioPage() {
           <Separator className="bg-border" />
 
           <section>
-            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+            <h2 className="text-3xl font-bold font-serif border-border pb-2 mb-4">
               Contributions
             </h2>
             <div className="grid gap-6">
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     React-Next-Folder Creator
@@ -492,7 +489,7 @@ export default function PortfolioPage() {
                   </Link>
                 </CardContent>
               </Card>
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     db4free-net-l10n
@@ -516,11 +513,11 @@ export default function PortfolioPage() {
 
           <Separator className="bg-border" />
           <section>
-            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+            <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
               Public Activity
             </h2>
             <div className="grid gap-6">
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     Backend and DSA Mentor at{" "}
@@ -552,7 +549,7 @@ export default function PortfolioPage() {
                   </Link>
                 </CardContent>
               </Card>
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     Frontend Mentor at{" "}
@@ -577,7 +574,7 @@ export default function PortfolioPage() {
                   </Link>
                 </CardContent>
               </Card>
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold font-serif">
                     Core Team at{" "}
@@ -609,11 +606,11 @@ export default function PortfolioPage() {
           <Separator className="bg-border" />
 
           <section>
-            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+            <h2 className="text-3xl font-bold font-serif border-border pb-2 mb-4">
               Testimonials
             </h2>
             <div className="grid gap-6">
-              <Card className="border border-border rounded-none shadow-none">
+              <Card className="border border-border rounded-sm shadow-none">
                 <CardContent className="p-6">
                   <p className="text-base italic mb-2">
                     {'"To Whom It May Concern:"'}
@@ -647,7 +644,7 @@ export default function PortfolioPage() {
           <Separator className="bg-border" />
 
           <section id="contact">
-            <h2 className="text-3xl font-bold font-serif border-b border-border pb-2 mb-4">
+            <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
               Contact Me
             </h2>
             <p className="text-base leading-relaxed mb-4">

@@ -8,10 +8,7 @@ export default function ProjectsPage() {
     <div className="grid gap-8 py-4">
       <section className="text-center border-b border-border pb-6 mb-6">
         <h1 className="text-4xl md:text-5xl font-bold font-serif leading-tight mb-2">List of Selected Projects</h1>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          A comprehensive showcase of my software engineering work, from personal applications to collaborative
-          endeavors and open-source contributions.
-        </p>
+     
         <p className="text-sm text-muted-foreground mt-2">
              Last updated on July 31, 2025
         </p>

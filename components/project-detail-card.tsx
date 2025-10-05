@@ -22,7 +22,7 @@ export function ProjectDetailCard({
   githubLink,
 }: ProjectDetailCardProps) {
   return (
-    <Card className="border border-border rounded-none shadow-none" id={`project-${id}`}  >
+    <Card className="border border-border rounded-sm shadow-none" id={`project-${id}`}  >
       <CardHeader>
         <CardTitle className="text-2xl font-bold font-serif">{title}</CardTitle>
       </CardHeader>
@@ -43,7 +43,7 @@ export function ProjectDetailCard({
         <div className="flex flex-wrap gap-4 pt-2">
           {liveDemoLink && (
             <Link href={liveDemoLink} target="_blank" rel="noopener noreferrer">
-              <Button className="rounded-none border border-border text-primary-foreground hover:bg-primary/90">
+              <Button className="rounded-sm border border-border text-primary-foreground hover:bg-primary/90">
               {title.includes("Firefox") ? (
                 <span className="ml-2">Install for Firefox</span>
               ) : title.includes("Tooran") ? (
@@ -56,7 +56,7 @@ export function ProjectDetailCard({
           )}
           {githubLink && (
             <Link href={githubLink} target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="rounded-none border border-border bg-transparent">
+              <Button variant="outline" className="rounded-sm border border-border bg-transparent">
                 View GitHub
               </Button>
             </Link>

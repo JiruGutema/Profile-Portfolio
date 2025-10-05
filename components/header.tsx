@@ -31,7 +31,7 @@ export function Header() {
     <header className="py-4 border-b border-border mb-8">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 flex justify-between items-center">
         <Link href="/" className="text-4xl font-bold font-serif tracking-tight">
-          Jiru Gutema
+        Jiru Gutema
         </Link>
         {/* Desktop nav */}
         <nav className="hidden md:flex space-x-6">

@@ -12,8 +12,8 @@ export const projects = [
         "Provides users with a cleaner YouTube experience by removing Shorts content.",
         "Demonstrates proficiency in browser extension development and JavaScript.",
       ],
-      liveDemoLink: "https://addons.mozilla.org/en-US/firefox/addon/hide-youtube-short/", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/Hide-Youtube-Shorts", // Replace with actual link
+      liveDemoLink: "https://addons.mozilla.org/en-US/firefox/addon/hide-youtube-short/", 
+      githubLink: "https://github.com/JiruGutema/Hide-Youtube-Shorts", 
     },
 
     {
@@ -26,8 +26,8 @@ export const projects = [
         "Features include creating categories, adding tasks, and efficient task management.",
         "Designed for a clean and intuitive user experience on Android devices.",
       ],
-      liveDemoLink: "https://tooran-documentation.vercel.app/", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/Tooran", // Replace with actual link
+      liveDemoLink: "https://tooran-documentation.vercel.app/", 
+      githubLink: "https://github.com/JiruGutema/Tooran", 
     }
     ,
     {
@@ -40,8 +40,8 @@ export const projects = [
         "Utilizes Express for real-time file transfer.",
         "Demonstrates proficiency in backend development and real-time web applications.",
       ],
-      liveDemoLink: "https://github.com/JiruGutema/FileShare-Hub", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/FileShare-Hub", // Replace with actual link
+      liveDemoLink: "https://github.com/JiruGutema/FileShare-Hub", 
+      githubLink: "https://github.com/JiruGutema/FileShare-Hub", 
     },
     {
       id: 4,
@@ -53,8 +53,8 @@ export const projects = [
         "Utilizes Natural Language Processing techniques for accurate sentiment detection.",
         "Demonstrates proficiency in backend development and machine learning integration.",
       ],
-      liveDemoLink: "https://github.com/JiruGutema/sentiment-analysis", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/sentiment-analysis", // Replace with actual link
+      liveDemoLink: "https://github.com/JiruGutema/sentiment-analysis", 
+      githubLink: "https://github.com/JiruGutema/sentiment-analysis", 
     },
     {
       id: 5,
@@ -66,8 +66,8 @@ export const projects = [
         "Utilizes a modern tech stack for a seamless user experience.",
         "Demonstrates proficiency in full-stack development and database management.",
       ],
-      liveDemoLink: "https://github.com/JiruGutema/Walaloo", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/Walaloo", // Replace with actual link
+      liveDemoLink: "https://github.com/JiruGutema/Walaloo", 
+      githubLink: "https://github.com/JiruGutema/Walaloo", 
     },
     {
       id: 6,
@@ -79,8 +79,8 @@ export const projects = [
         "Assists users with basic tasks, coding queries, and writing paragraphs.",
         "Demonstrates integration with external AI services.",
       ],
-      liveDemoLink: "https://gemini-chat-bot-bice.vercel.app/", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/gemini_chat_bot", // Replace with actual link
+      liveDemoLink: "https://gemini-chat-bot-bice.vercel.app/", 
+      githubLink: "https://github.com/JiruGutema/gemini_chat_bot", 
     },
     {
       id: 7,
@@ -93,8 +93,8 @@ export const projects = [
         "Managed database interactions with MySQL.",
         "Contributed to both frontend (React) and backend (Node.js/Express) development.",
       ],
-      liveDemoLink: "https://github.com/JiruGutema/House_Rental_and_Sell_Management_System", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/House_Rental_and_Sell_Management_System", // Replace with actual link
+      liveDemoLink: "https://github.com/JiruGutema/House_Rental_and_Sell_Management_System", 
+      githubLink: "https://github.com/JiruGutema/House_Rental_and_Sell_Management_System", 
     },
     {
       id: 8,
@@ -106,8 +106,8 @@ export const projects = [
         "Built with modern backend frameworks (NestJS, TypeScript) and vanilla HTML for the frontend.",
         "Designed and implemented the database schema for restaurant operations.",
       ],
-      liveDemoLink: "https://github.com/JiruGutema/Restaurant_Ordering_System_2024_25", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/Restaurant_Ordering_System_2024_25", // Replace with actual link
+      liveDemoLink: "https://github.com/JiruGutema/Restaurant_Ordering_System_2024_25", 
+      githubLink: "https://github.com/JiruGutema/Restaurant_Ordering_System_2024_25", 
     },
     {
       id: 9,
@@ -120,8 +120,8 @@ export const projects = [
         "Developed mobile features with Flutter.",
         "Integrated JWT for secure authentication and Firebase for additional services.",
       ],
-      liveDemoLink: "https://github.com/JiruGutema/VolunteerConnect", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/VolunteerConnect", // Replace with actual link
+      liveDemoLink: "https://github.com/JiruGutema/VolunteerConnect", 
+      githubLink: "https://github.com/JiruGutema/VolunteerConnect", 
     },
     {
       id: 10,
@@ -133,8 +133,8 @@ export const projects = [
         "Added multi-argument support for creating multiple folders simultaneously.",
         "Improved the utility and efficiency of the library for developers.",
       ],
-      liveDemoLink: "https://www.npmjs.com/package/react-cli-builder", // Replace with actual link
-      githubLink: "https://github.com/JiruGutema/react-next_folder", // Replace with actual link
+      liveDemoLink: "https://www.npmjs.com/package/react-cli-builder", 
+      githubLink: "https://github.com/JiruGutema/react-next_folder", 
     },
     {
       id: 11,
@@ -146,7 +146,7 @@ export const projects = [
         "Helped make the platform more accessible to Afaan Oromoo speakers.",
         "Demonstrates commitment to open-source and localization efforts.",
       ],
-      liveDemoLink: "https://www.db4free.net/translate.php?language=om", // Replace with actual link
-      githubLink: "https://github.com/mpopp75/db4free-net-l10n/tree/main/om", // Replace with actual link
+      liveDemoLink: "https://www.db4free.net/translate.php?language=om", 
+      githubLink: "https://github.com/mpopp75/db4free-net-l10n/tree/main/om", 
     },
   ]
