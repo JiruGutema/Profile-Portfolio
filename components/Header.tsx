@@ -39,7 +39,7 @@ export function Header() {
           noreferrer"
         >
           <Github
-            className="cursor-pointer w-10 h-8 text-zinc-700 hover:scale-125 hover:text-black"
+            className="cursor-pointer w-10 h-8 text-foreground hover:scale-125 hover:text-black"
             size={20}
           />
           <span className="sr-only">GitHub</span>
