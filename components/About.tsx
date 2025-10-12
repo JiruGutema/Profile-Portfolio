@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import SocialLinks from "./Social-Links";
 
 export default function About() {
   return (
@@ -56,6 +57,7 @@ export default function About() {
           <span className="ml-2">View Resume</span>
         </Button>
       </Link>
+
     </section>
   );
 }

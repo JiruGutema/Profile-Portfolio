@@ -8,7 +8,6 @@ export default function ProjectsPage() {
     <div className="grid gap-8 py-4">
       <section className="text-center border-border  ">
         <h1 className="text-4xl md:text-5xl font-bold font-serif leading-tight mb-2">List of Selected Projects</h1>
-     
       </section>
 
       <div className="grid gap-8">

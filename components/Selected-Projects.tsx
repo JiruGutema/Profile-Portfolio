@@ -9,7 +9,7 @@ export default function SelectedProjects() {
       </h2>
       <div
         className="grid gap-6"
-        style={{ height: "600px", overflowY: "scroll" }}
+      /*   style={{ height: "600px", overflowY: "scroll" }} */
       >
         <Card className="border border-border rounded-sm shadow-none">
           <CardHeader>

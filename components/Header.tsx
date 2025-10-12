@@ -1,6 +1,8 @@
 "use client";
+import { Github } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { Button } from "./ui/button";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,11 +32,20 @@ export function Header() {
   return (
     <header className="py-4 border-b border-border mb-8">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 flex justify-between items-center">
-        <Link href="/" className="text-4xl font-bold font-serif tracking-tight">
-          Jiren
-        </Link>
+        <a
+          href="https://github.com/JiruGutema"
+          target="_blank"
+          rel="noopener
+          noreferrer"
+        >
+          <Github
+            className="cursor-pointer w-10 h-8 text-zinc-700 hover:scale-125 hover:text-black"
+            size={20}
+          />
+          <span className="sr-only">GitHub</span>
+        </a>
         {/* Desktop nav */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6 justify-center items-center">
           <Link href="/" className="text-lg font-semibold hover:underline">
             Home
           </Link>
@@ -46,7 +57,7 @@ export function Header() {
           </Link>
           <button
             onClick={toggleTheme}
-            className="ml-4 w-10 h-10 flex mt-1 text-xl"
+            className="ml-4 w-10 h-10 flex mt-1 text-xl items-center "
             aria-label="Toggle dark mode"
           >
             {isDark ? (

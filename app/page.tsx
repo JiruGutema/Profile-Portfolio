@@ -4,11 +4,11 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Mail, Github, Linkedin, Globe, Code, X, Phone } from "lucide-react"; // Added Globe and Code icons
-import ContactMe from "@/components/contact-me";
+import ContactMe from "@/components/Contact-Me";
 import ProfileContainer from "@/components/Profile-Container";
 import Skill from "@/components/Skill";
 import Languages from "@/components/Languages";
-import About from "@/components/about";
+import About from "@/components/About";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import SelectedProjects from "@/components/Selected-Projects";
