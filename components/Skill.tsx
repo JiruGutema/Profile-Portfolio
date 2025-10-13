@@ -8,10 +8,10 @@ export default function Skill() {
       </CardHeader>
       <CardContent className="">
         <h3 className="text-lg font-semibold">Programming Languages:</h3>
-        <p className="text-base mt-0">JavaScript, Golang, Python, Python</p>
+        <p className="text-base mt-0">JavaScript, Golang, Python, Java</p>
         <h3 className="text-lg mt-3 font-semibold">Frameworks & Libraries:</h3>
         <p className="text-base">
-          React, Next.js, Node.js, Express, Flutter, NestJS, Tailwindcss
+          Reactjs, Nextjs, Nodejs, Expressjs, Flutter, NestJS, Tailwindcss
         </p>
         <h3 className="text-lg mt-3 font-semibold">Databases:</h3>
         <p className="text-base">Postgres, MySQL, MongoDB</p>
