@@ -5,7 +5,6 @@ This is a personal portfolio website to showcase my projects and skills.
 ## Technologies Used
 
 - [Next.js](https://nextjs.org/)
-- [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Shadcn/ui](https://ui.shadcn.com/)
