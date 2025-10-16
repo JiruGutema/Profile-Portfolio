@@ -2,7 +2,8 @@ export const projects = [
   {
     id: 1,
     title: "Email Craft (Full-Stack Web App)",
-    description: "A full-stack application for composing, styling, and sending custom HTML emails directly from your Gmail account.",
+    description: "Email Craft is a full-stack application for composing, styling, and sending custom HTML emails directly from your Gmail account.",
+    note:  "I haven't verified it with Google yet, so it is currently in testing mode and can only be used by a limited number of users. if you want to try it out, please contact me.or watch the demo video below!",
     technologies: [
       "NestJS",
       "NextJS",
@@ -30,6 +31,7 @@ export const projects = [
   {
     id: 3,
     title: "Page Marker (Firefox Extension)",
+    note: "",
     description: "A simple Firefox extension that lets you draw, annotate, and highlight directly on any webpage.",
     technologies: ["JavaScript", "HTML5 Canvas", "WebExtensions API", "CSS"],
     details: [
@@ -48,6 +50,7 @@ export const projects = [
     id: 13,
     title: "Youtube Shorts Blocker (Firefox Extension)",
     description: "A Firefox extension to block YouTube Shorts.",
+    note: "",
     technologies: ["JavaScript", "WebExtensions API", "HTML", "CSS"],
     details: [
       "Have you ever wanted to watch youtube videos and then lost yourself in the endless loop of YouTube Shorts?",
@@ -66,6 +69,7 @@ export const projects = [
     id: 2,
     title: "Tooran Android Application (Personal)",
     description: "A task organizer Flutter app.",
+    note: "",
     technologies: ["Flutter", "Dart", "Firebase (optional for future features)"],
     details: [
       "Allows users to manage tasks within categories.",
@@ -84,6 +88,7 @@ export const projects = [
     title: "Sentiment Analysis Web Application",
     description: "A sentiment analysis web application built with Python and Flask.",
     technologies: ["Python", "Natural Language Processing", "Flask"],
+    note: "",
     details: [
       "Built a sentiment analysis web application that allows users to analyze the sentiment of text.",
       "Utilizes Natural Language Processing techniques for accurate sentiment detection.",
@@ -95,6 +100,7 @@ export const projects = [
   {
     id: 5,
     title: "Walaloo a Poetry Application ",
+    note: 'Private Repository',
     description: "A poetry application built with Next.js and Nestjs (Private Repository).",
     technologies: ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Prisma"],
     details: [
@@ -109,6 +115,7 @@ export const projects = [
     id: 6,
     title: "JirenIntelli (Personal)",
     description: "A chatbot based on a Gemini free flash API.",
+    note: "",
     technologies: ["Javascript", "Node.js", "Express", "Gemini API"],
     details: [
       "Built a mini chatbot that utilizes the Gemini chatbot API.",
@@ -122,6 +129,7 @@ export const projects = [
     id: 7,
     title: "House Rental Web Application (Group Project)",
     description: "A full-stack web application for a house rental platform.",
+    note: "",
     technologies: ["Node.js", "Express", "MySQL", "React", "JWT"],
     details: [
       "Developed a comprehensive platform for listing and renting houses.",
@@ -137,6 +145,7 @@ export const projects = [
     title: "Restaurant Management System (Group Project)",
     description: "A full-stack restaurant management system.",
     technologies: ["Node.js", "NestJS", "TypeScript", "Vanilla HTML", "MySQL"],
+    note: "",
     details: [
       "Participated in a group project contributing as a database designer, frontend developer, and API integrator.",
       "Built with modern backend frameworks (NestJS, TypeScript) and vanilla HTML for the frontend.",
@@ -150,6 +159,7 @@ export const projects = [
     title: "VolunteerConnect (Group Project)",
     description: "Connects volunteers with organizations.",
     technologies: ["Express", "MySQL", "Flutter", "JWT", "Firebase"],
+    note: "",
     details: [
       "Contributed as a backend developer and Flutter developer.",
       "Implemented backend functionalities using Express and MySQL.",
@@ -164,6 +174,7 @@ export const projects = [
     title: "React-Next-Folder Creator (Contribution)",
     description: "A Node.js library that creates folders for React and Next.js projects.",
     technologies: ["Node.js"],
+    note: "",
     details: [
       "Contributed to a project by enhancing user experience with commands.",
       "Added multi-argument support for creating multiple folders simultaneously.",
@@ -175,6 +186,7 @@ export const projects = [
   {
     id: 11,
     title: "db4free-net-l10n (Contribution)",
+    note: "",
     description: "Contribution to a free online database host platform.",
     technologies: ["Localization", "Afaan Oromoo"],
     details: [
@@ -189,6 +201,7 @@ export const projects = [
     id: 12,
     title: "Local File Sharing",
     description: "A file sharing application built with Node.js and Express.",
+    note: "",
     technologies: ["Javascript", "Node.js", "Express", "Socket.IO"],
     details: [
       "Built a file sharing application that allows users to upload and share files.",

@@ -8,6 +8,7 @@ import { User } from "lucide-react";
 interface ProjectDetailCardProps {
   id: number;
   title: string;
+  note: string;
   description: string;
   technologies: string[];
   details: string[];
@@ -19,6 +20,7 @@ export function ProjectDetailCard({
   id,
   title,
   description,
+  note,
   technologies,
   details,
   liveDemoLink,
@@ -58,6 +60,7 @@ export function ProjectDetailCard({
       </CardHeader>
       <CardContent className="space-y-4">
         <p className="text-base text-muted-foreground">{description}</p>
+        {note && <i className="text-sm italic mt-0 text-muted-foreground">{note}</i>}
         <div>
           <h3 className="text-lg font-semibold">Technologies Used:</h3>
           <p className="text-base">{technologies.join(", ")}</p>
@@ -137,12 +140,12 @@ export function ProjectDetailCard({
           {title.includes("Email Craft") && (
             
             <Link
-              href="https://www.youtube.com/watch?v=Abs08REbc4o&t=4s"
+              href="https://www.youtube.com/watch?v=Abs08REbc4o"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button variant={'outline'} className="rounded-sm border border-border bg-transparent">
-                <span className="ml-2">Video</span>
+                <span className="ml-2">Demo Video</span>
               </Button>
             </Link>
           )}
