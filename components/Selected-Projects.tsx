@@ -34,7 +34,18 @@ export default function SelectedProjects() {
       <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
         Top Picks Projects
       </h2>
-      <p className="info"> For more projects <Link href="/projects" className="text-blue-600 pb-2 font-bold hover:underline">click here</Link>.</p><br />
+      <p className="info">
+        {" "}
+        For more projects{" "}
+        <Link
+          href="/projects"
+          className="text-blue-600 pb-2 font-bold hover:underline"
+        >
+          click here
+        </Link>
+        .
+      </p>
+      <br />
       <div
         className="grid gap-6"
         /*   style={{ height: "600px", overflowY: "scroll" }} */
@@ -47,21 +58,33 @@ export default function SelectedProjects() {
           </CardHeader>
           <CardContent>
             <p className="text-base text-muted-foreground mb-2">
-              Email Craft is a full-stack application for composing, styling, and sending
-              custom HTML emails directly from your Gmail account. <i>I haven't verified it with Google yet, so it is currently in testing mode and can only be used by a limited number of users. if you want to try it out, please contact me.
-              or watch the demo video</i> <Link href="https://www.youtube.com/watch?v=Abs08REbc4o" className="text-blue-600 font-bold hover:underline">here</Link>.
+              Email Craft is a full-stack application for composing, styling,
+              and sending custom HTML emails directly from your Gmail account.{" "}
+              <i>
+                I haven't verified it with Google yet, so it is currently in
+                testing mode and can only be used by a limited number of users.
+                if you want to try it out, please contact me. or watch the demo
+                video
+              </i>{" "}
+              <Link
+                href="https://www.youtube.com/watch?v=Abs08REbc4o"
+                className="text-blue-600 font-bold hover:underline"
+              >
+                here
+              </Link>
+              .
             </p>
             <Link
               href="https://email-craft-olive.vercel.app"
               className="text-black bg-white rounded-sm border border-black hover:underline p-2 text-sm mt-2 inline-block"
             >
-              Try Email Craft 
+              Try Email Craft
             </Link>
             <Link
               href="https://email-craft-olive.vercel.app"
               className="text-black bg-white rounded-sm ml-2 border border-black hover:underline p-2 text-sm mt-2 inline-block"
             >
-              Github 
+              Github
             </Link>
           </CardContent>
         </Card>
@@ -149,17 +172,13 @@ export default function SelectedProjects() {
         <Card className="border border-border rounded-sm shadow-none">
           <CardHeader>
             <CardTitle className="text-xl font-bold font-serif">
-              Web Marker Extension
+              Page Marker
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-base text-muted-foreground mb-2">
-              I Modified a Firefox extension that allows users to draw and mark
-              up webpages for better collaboration and feedback. the extension
-              was removed previously from the firefox addon store due to some
-              policy violation which was built by <strong>Daniel</strong>. I
-              fixed the issues as well as added more functionalities and then
-              republished it under my name.
+              A simple Firefox extension that lets you draw, annotate, and
+              highlight directly on any webpage.
             </p>
             <span
               className=" flex flex-row mb-2 font-bold transition-colors duration-500 animate-pulse"

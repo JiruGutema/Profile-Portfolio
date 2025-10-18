@@ -19,7 +19,7 @@ import SecondaryHeader from "@/components/Secondary-Header";
 
 export default function PortfolioPage() {
   return (
-    <div className="grid gap-8 py-4">
+    <div className="grid gap-8 py-4 scroll-smooth">
       <SecondaryHeader />
       <div className="grid md:grid-cols-3 gap-8">
         {/* side bar section */}
