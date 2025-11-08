@@ -1,3 +1,4 @@
+'use client';
 import { Mail, Github, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
@@ -11,11 +12,14 @@ export default function ProfileContainer() {
       <CardContent className="p-6 text-center">
         <div className="relative w-48 h-48 mx-auto mb-4">
           <Image
-            src="/images/small_profile.png"
+            src="/images/profile_1.png"
             alt="Jiru Gutema Profile"
             layout="fill"
             objectFit="cover"
-            className="rounded-full border-2 border-border"
+            className="rounded-full cursor-pointer border-2 border-foreground"
+            onClick={()=>{
+              window.open('/images/profile_1.png','_blank');
+            }}
           />
         </div>
         <h2 className="text-3xl font-bold font-serif mb-1">Jiru Gutema</h2>

@@ -82,7 +82,7 @@ export function Header() {
 
       {/* Mobile nav */}
       {menuOpen && (
-        <nav className="md:hidden border-t-0 border-border px-4 py-2 flex flex-col w-full items-end">
+        <nav className="md:hidden border-t-0 border-border px-4 py-2 flex flex-col w-full items-end absolute">
           <Link
             href="/"
             className="block py-2 pr-6 text-lg font-semibold hover:underline"
