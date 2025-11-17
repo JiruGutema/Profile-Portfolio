@@ -5,24 +5,34 @@ export default function Experience() {
         Experience
       </h2>
       <div className="space-y-4">
-        <article>
-          <h3 className="text-xl font-semibold font-serif">
-            Backend Developer @Gulit
-          </h3>
-          <p className="text-base text-muted-foreground">
-            Gulit | 05/2025 – Present
-          </p>
-          <p className="text-base text-muted-foreground">
-            Addis Ababa, Ethiopia
-          </p>
-          <ul className="list-disc list-inside text-base mt-2">
-            <li>
-              Currently, I am working as a Express backend developer for Gulit,
-              where I am Implementing and maintaining the backend for their
-              eCommerce platform.
-            </li>
-          </ul>
-        </article>
+      
+	<article>
+  <h3 className="text-xl font-semibold font-serif">
+    Backend Developer @ Gulit
+  </h3>
+  <p className="text-base text-muted-foreground">
+    Gulit | 05/2025 – 10/2025
+  </p>
+  <p className="text-base text-muted-foreground">
+    Addis Ababa, Ethiopia
+  </p>
+  <ul className="list-disc list-inside text-base mt-2">
+    <li>
+      Designed and implemented backend services for <strong>authentication</strong>,
+      <strong>admin dashboards</strong>, and <strong>user management</strong> 
+      using <strong>Express.js</strong>, <strong>PostgreSQL</strong>, and <strong>Redis</strong>.
+    </li>
+    <li>
+      Developed secure APIs for user authentication, role-based access control, 
+      and admin functionalities.
+    </li>
+    <li>
+      Collaborated with frontend developers to integrate dashboards and 
+      ensure seamless management of users and platform data.
+    </li>
+  </ul>
+</article>
+
         <article>
           <h3 className="text-xl font-semibold font-serif">
             Fullstack Developer @BewideTechnologies
