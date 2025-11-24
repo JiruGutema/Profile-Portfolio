@@ -5,51 +5,52 @@ export default function Experience() {
         Experience
       </h2>
       <div className="space-y-4">
-      
-	<article>
-  <h3 className="text-xl font-semibold font-serif">
-    Backend Developer @ Gulit
-  </h3>
-  <p className="text-base text-muted-foreground">
-    Gulit | 05/2025 – 10/2025
-  </p>
-  <p className="text-base text-muted-foreground">
-    Addis Ababa, Ethiopia
-  </p>
-  <ul className="list-disc list-inside text-base mt-2">
-    <li>
-      Designed and implemented backend services for <strong>authentication</strong>,
-      <strong>admin dashboards</strong>, and <strong>user management</strong> 
-      using <strong>Express.js</strong>, <strong>PostgreSQL</strong>, and <strong>Redis</strong>.
-    </li>
-    <li>
-      Developed secure APIs for user authentication, role-based access control, 
-      and admin functionalities.
-    </li>
-    <li>
-      Collaborated with frontend developers to integrate dashboards and 
-      ensure seamless management of users and platform data.
-    </li>
-  </ul>
-</article>
-
         <article>
           <h3 className="text-xl font-semibold font-serif">
-            Fullstack Developer @BewideTechnologies
+            Backend Developer @ Gulit
           </h3>
           <p className="text-base text-muted-foreground">
-            Bewide Technologies | 07/2025 – Present
+            Gulit | 05/2025 – 10/2025
           </p>
           <p className="text-base text-muted-foreground">
             Addis Ababa, Ethiopia
           </p>
           <ul className="list-disc list-inside text-base mt-2">
             <li>
-              I am Currently, a Fullstack Developer Intern at Bewide
-              Teachnologies, where I am working on a full stack eCommerce
-              Application for client. I am Implementing it using a Nextjs as a
-              Full stack Framwework
+              Designed and implemented backend services for{" "}
+              <strong>authentication</strong>,<strong>admin dashboards</strong>,
+              and <strong>user management</strong>
+              using <strong>Express.js</strong>, <strong>PostgreSQL</strong>,
+              and <strong>Redis</strong>.
             </li>
+            <li>
+              Developed secure APIs for user authentication, role-based access
+              control, and admin functionalities.
+            </li>
+            <li>
+              Collaborated with frontend developers to integrate dashboards and
+              ensure seamless management of users and platform data.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3 className="text-xl font-semibold font-serif">
+            Fullstack Developer @BewideTechnologies
+          </h3>
+          <p className="text-base text-muted-foreground">
+            Bewide Technologies | 07/2025 – 09/2025
+          </p>
+          <p className="text-base text-muted-foreground">
+            Addis Ababa, Ethiopia
+          </p>
+          <ul className="list-disc list-inside text-base mt-2">
+            <li>
+              I was a Fullstack Developer Intern at Bewide Technologies, where I
+              worked on a full stack furniture eCommerce application for a client. I
+              implemented it using Next.js as a full stack framework.
+            </li>
+            <li>Technologies used: Docker, Next.js, PostgreSQL, Cloudinary</li>
           </ul>
         </article>
         <article>
