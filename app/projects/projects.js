@@ -1,9 +1,10 @@
 export const projects = [
   {
     id: 1,
-    title: "Email Craft (Full-Stack Web App)",
-    description: "Email Craft is a full-stack application for composing, styling, and sending custom HTML emails directly from your Gmail account.",
-    note:  "I haven't verified it with Google yet, so it is currently in testing mode and can only be used by a limited number of users. if you want to try it out, please contact me.or watch the demo video below!",
+    title: "Email Craft",
+    description:
+      "Email Craft is a full-stack application for composing, styling, and sending custom HTML emails directly from your Gmail account.",
+    note: "I haven't verified it with Google yet, so it is currently in testing mode and can only be used by a limited number of users. if you want to try it out, please contact me.or watch the demo video below!",
     technologies: [
       "NestJS",
       "NextJS",
@@ -11,7 +12,7 @@ export const projects = [
       "PostgreSQL",
       "Google OAuth",
       "Gmail API",
-      "JWT"
+      "JWT",
     ],
     details: [
       "Email Craft is a web application designed to create, style, and send professional emails directly from your Gmail account.",
@@ -29,10 +30,29 @@ export const projects = [
   },
 
   {
+    id: 2,
+    title: "Kai-Share",
+    description:
+      "KaiShare is a secure platform for sharing code snippets and text with others, focusing on privacy, simplicity, and collaborative sharing.",
+    note: "If you don't have an account, don't forget to copy the generated link after posting, as there is no way to retrieve it later.",
+    technologies: ["NextJS", "Go (Gin Framework)", "PostgreSQL"],
+    details: [
+      "Easily share code blocks or plain text securely with encryption options.",
+      "Supports 20+ programming languages for code formatting.",
+      "Modern and intuitive UI built with NextJS for a smooth user experience.",
+      "Backend built with Go (Gin Framework) for robust and scalable services.",
+      "Privacy-focused platform with options for expiry and one-time viewing of shared content.",
+    ],
+    liveDemoLink: "https://kaishare.vercel.app/",
+    githubLink: "https://github.com/JiruGutema/KaiShare",
+  },
+
+  {
     id: 3,
     title: "Page Marker (Firefox Extension)",
     note: "",
-    description: "A simple Firefox extension that lets you draw, annotate, and highlight directly on any webpage.",
+    description:
+      "A simple Firefox extension that lets you draw, annotate, and highlight directly on any webpage.",
     technologies: ["JavaScript", "HTML5 Canvas", "WebExtensions API", "CSS"],
     details: [
       "Ever wanted to jot down quick notes or draw on a webpage while browsing? Page Marker makes it possible.",
@@ -43,10 +63,11 @@ export const projects = [
       "Enhances productivity by allowing visual note-taking without switching tabs.",
       "Showcases strong skills in browser extension development and canvas manipulation.",
     ],
-    liveDemoLink: "https://addons.mozilla.org/en-US/firefox/addon/draw-and-mark-a-webpage/",
+    liveDemoLink:
+      "https://addons.mozilla.org/en-US/firefox/addon/draw-and-mark-a-webpage/",
     githubLink: "https://github.com/JiruGutema/Firefox-Marker-Extension",
-  }, {
-
+  },
+  {
     id: 13,
     title: "Youtube Shorts Blocker (Firefox Extension)",
     description: "A Firefox extension to block YouTube Shorts.",
@@ -61,16 +82,21 @@ export const projects = [
       "Provides users with a cleaner YouTube experience by removing Shorts content.",
       "Demonstrates proficiency in browser extension development and JavaScript.",
     ],
-    liveDemoLink: "https://addons.mozilla.org/en-US/firefox/addon/hide-youtube-short/",
+    liveDemoLink:
+      "https://addons.mozilla.org/en-US/firefox/addon/hide-youtube-short/",
     githubLink: "https://github.com/JiruGutema/Hide-Youtube-Shorts",
   },
 
   {
     id: 2,
-    title: "Tooran Android Application (Personal)",
+    title: "Tooran Android Application ",
     description: "A task organizer Flutter app.",
     note: "",
-    technologies: ["Flutter", "Dart", "Firebase (optional for future features)"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase (optional for future features)",
+    ],
     details: [
       "Allows users to manage tasks within categories.",
       "Features include creating categories, adding tasks, and efficient task management.",
@@ -78,15 +104,13 @@ export const projects = [
     ],
     liveDemoLink: "https://tooran-documentation.vercel.app/",
     githubLink: "https://github.com/JiruGutema/Tooran",
-  }
-  ,
-
-
+  },
 
   {
     id: 4,
     title: "Sentiment Analysis Web Application",
-    description: "A sentiment analysis web application built with Python and Flask.",
+    description:
+      "A sentiment analysis web application built with Python and Flask.",
     technologies: ["Python", "Natural Language Processing", "Flask"],
     note: "",
     details: [
@@ -97,23 +121,25 @@ export const projects = [
     liveDemoLink: "https://github.com/JiruGutema/sentiment-analysis",
     githubLink: "https://github.com/JiruGutema/sentiment-analysis",
   },
-  {
-    id: 5,
-    title: "Walaloo a Poetry Application ",
-    note: 'Private Repository',
-    description: "A poetry application built with Next.js and Nestjs (Private Repository).",
-    technologies: ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Prisma"],
-    details: [
-      "Built a Reddit Style Afaan Oromo poetry application that allows users to create and share poems, Comments, and likes.",
-      "Utilizes a modern tech stack for a seamless user experience.",
-      "Demonstrates proficiency in full-stack development and database management.",
-    ],
-    liveDemoLink: "https://github.com/JiruGutema/Walaloo",
-    githubLink: "https://github.com/JiruGutema/Walaloo",
-  },
+  // },
+  // {
+  //   id: 5,
+  //   title: "Walaloo a Poetry Application ",
+  //   note: "Private Repository",
+  //   description:
+  //     "A poetry application built with Next.js and Nestjs (Private Repository).",
+  //   technologies: ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Prisma"],
+  //   details: [
+  //     "Built a Reddit Style Afaan Oromo poetry application that allows users to create and share poems, Comments, and likes.",
+  //     "Utilizes a modern tech stack for a seamless user experience.",
+  //     "Demonstrates proficiency in full-stack development and database management.",
+  //   ],
+  //   liveDemoLink: "https://github.com/JiruGutema/Walaloo",
+  //   githubLink: "https://github.com/JiruGutema/Walaloo",
+  // },
   {
     id: 6,
-    title: "JirenIntelli (Personal)",
+    title: "JirenIntelli",
     description: "A chatbot based on a Gemini free flash API.",
     note: "",
     technologies: ["Javascript", "Node.js", "Express", "Gemini API"],
@@ -137,8 +163,10 @@ export const projects = [
       "Managed database interactions with MySQL.",
       "Contributed to both frontend (React) and backend (Node.js/Express) development.",
     ],
-    liveDemoLink: "https://github.com/JiruGutema/House_Rental_and_Sell_Management_System",
-    githubLink: "https://github.com/JiruGutema/House_Rental_and_Sell_Management_System",
+    liveDemoLink:
+      "https://github.com/JiruGutema/House_Rental_and_Sell_Management_System",
+    githubLink:
+      "https://github.com/JiruGutema/House_Rental_and_Sell_Management_System",
   },
   {
     id: 8,
@@ -151,8 +179,10 @@ export const projects = [
       "Built with modern backend frameworks (NestJS, TypeScript) and vanilla HTML for the frontend.",
       "Designed and implemented the database schema for restaurant operations.",
     ],
-    liveDemoLink: "https://github.com/JiruGutema/Restaurant_Ordering_System_2024_25",
-    githubLink: "https://github.com/JiruGutema/Restaurant_Ordering_System_2024_25",
+    liveDemoLink:
+      "https://github.com/JiruGutema/Restaurant_Ordering_System_2024_25",
+    githubLink:
+      "https://github.com/JiruGutema/Restaurant_Ordering_System_2024_25",
   },
   {
     id: 9,
@@ -172,7 +202,8 @@ export const projects = [
   {
     id: 10,
     title: "React-Next-Folder Creator (Contribution)",
-    description: "A Node.js library that creates folders for React and Next.js projects.",
+    description:
+      "A Node.js library that creates folders for React and Next.js projects.",
     technologies: ["Node.js"],
     note: "",
     details: [
@@ -210,5 +241,6 @@ export const projects = [
     ],
     liveDemoLink: "https://github.com/JiruGutema/FileShare-Hub",
     githubLink: "https://github.com/JiruGutema/FileShare-Hub",
-  }
-]
+  },
+];
+
