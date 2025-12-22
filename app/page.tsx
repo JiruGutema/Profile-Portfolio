@@ -1,9 +1,4 @@
-import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { Mail, Github, Linkedin, Globe, Code, X, Phone } from "lucide-react"; // Added Globe and Code icons
 import ContactMe from "@/components/Contact-Me";
 import ProfileContainer from "@/components/Profile-Container";
 import Skill from "@/components/Skill";

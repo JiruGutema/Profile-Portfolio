@@ -11,7 +11,7 @@ export default function SelectedProjects() {
     async function fetchHideYoutubeData() {
       const slug = "hide-youtube-short";
       const res = await fetch(
-        `https://addons.mozilla.org/api/v5/addons/addon/${slug}/`
+        `https://addons.mozilla.org/api/v5/addons/addon/${slug}/`,
       );
       if (!res.ok) throw new Error(`AMO API error ${res.status}`);
       const data = await res.json();
@@ -20,14 +20,14 @@ export default function SelectedProjects() {
     async function fetchPageMarkerData() {
       const slug = "draw-and-mark-a-webpage";
       const res = await fetch(
-        `https://addons.mozilla.org/api/v5/addons/addon/${slug}/`
+        `https://addons.mozilla.org/api/v5/addons/addon/${slug}/`,
       );
       if (!res.ok) throw new Error(`AMO API error ${res.status}`);
       const data = await res.json();
       setPagemarkeruser(data.average_daily_users);
     }
 
-    fetchHideYoutubeData(), fetchPageMarkerData(), [];
+    (fetchHideYoutubeData(), fetchPageMarkerData(), []);
   });
   return (
     <section>
@@ -81,7 +81,34 @@ export default function SelectedProjects() {
               Try Email Craft
             </Link>
             <Link
-              href="https://email-craft-olive.vercel.app"
+              href="https://Github.com/jirugutema/email-craft"
+              className="text-black bg-white rounded-sm ml-2 border border-black hover:underline p-2 text-sm mt-2 inline-block"
+            >
+              Github
+            </Link>
+          </CardContent>
+        </Card>
+
+        <Card className="border border-border rounded-sm shadow-none">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold font-serif">
+              Kai-Share
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-base text-muted-foreground mb-2">
+              KaiShare is a secure platform for sharing code snippets and text
+              with others, focusing on privacy, simplicity, and collaborative
+              sharing. .
+            </p>
+            <Link
+              href="https://Kai-Share.vercel.app"
+              className="text-black bg-white rounded-sm border border-black hover:underline p-2 text-sm mt-2 inline-block"
+            >
+              Try Kai-Share
+            </Link>
+            <Link
+              href="https://Github.com/jirugutema/KaiShare"
               className="text-black bg-white rounded-sm ml-2 border border-black hover:underline p-2 text-sm mt-2 inline-block"
             >
               Github
@@ -130,8 +157,8 @@ export default function SelectedProjects() {
                   hideyoutubeuser > 10000
                     ? "#16a34a"
                     : hideyoutubeuser > 1000
-                    ? "#eab308"
-                    : "#ef4444",
+                      ? "#eab308"
+                      : "#ef4444",
                 fontWeight: "bold",
                 textShadow: "0 0 8px rgba(255,255,0,0.5)",
               }}
@@ -187,8 +214,8 @@ export default function SelectedProjects() {
                   hideyoutubeuser > 10000
                     ? "#16a34a"
                     : hideyoutubeuser > 1000
-                    ? "#eab308"
-                    : "#ef4444",
+                      ? "#eab308"
+                      : "#ef4444",
                 fontWeight: "bold",
                 textShadow: "0 0 8px rgba(255,255,0,0.5)",
               }}
