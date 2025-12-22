@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import SocialLinks from "./Social-Links";
 
 export default function About() {
   return (
