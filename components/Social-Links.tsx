@@ -8,14 +8,13 @@ import {
   Github,
   Code,
   Mail,
-  Phone,
   Code2Icon,
 } from "lucide-react";
 
 export default function SocialLinks() {
   return (
     <div className="flex gap-x-2 mt-4">
-      <div className="relative flex items-center justify-center gap-x-3 rounded-md p-3 py-2 text-sm bg-card animate-dash">
+      <div className="relative flex items-center justify-center gap-x-3 rounded-md p-3 py-2 text-sm bg-card border-1 border-primary ">
         <a
           href="https://www.github.com/jirugutema"
           target="_blank"
@@ -87,44 +86,6 @@ export default function SocialLinks() {
             size={20}
           />
         </a>
-        {/* Inline border animation */}
-        <style jsx>{`
-          div::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: 4px;
-            border-color: transparent;
-            background: linear-gradient(
-              90deg,
-              #ffffff,
-              #000000,
-              #ffffff,
-              #000000,
-              #ffffff,
-              #000000
-            );
-            background-size: 300% 300%;
-            -webkit-mask: linear-gradient(#fff 0 0) content-box,
-              linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            padding: 1px;
-
-            animation: borderMove 2s linear infinite;
-            z-index: 0;
-            pointer-events: none;
-          }
-
-          @keyframes borderMove {
-            0% {
-              background-position: 0% 50%;
-            }
-            100% {
-              background-position: 300% 50%;
-            }
-          }
-        `}</style>
       </div>
     </div>
   );
