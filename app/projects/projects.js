@@ -43,7 +43,7 @@ export const projects = [
       "Backend built with Go (Gin Framework) for robust and scalable services.",
       "Privacy-focused platform with options for expiry and one-time viewing of shared content.",
     ],
-    liveDemoLink: "https://kaishare.vercel.app/",
+    liveDemoLink: "https://kai-share.vercel.app/",
     githubLink: "https://github.com/JiruGutema/KaiShare",
   },
 
