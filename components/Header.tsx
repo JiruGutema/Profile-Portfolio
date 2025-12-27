@@ -1,10 +1,12 @@
 "use client";
 import { Github, Moon, Sun } from "lucide-react";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "./ui/button";
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const popupRef = useRef<HTMLDivElement | null>(null);
   const [isDark, setIsDark] = useState(false);
 
   // Load saved theme on mount
@@ -27,6 +29,29 @@ export function Header() {
       localStorage.setItem("theme", "light");
     }
   };
+
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    const closeOnScroll = () => setMenuOpen(false);
+
+    window.addEventListener("scroll", closeOnScroll);
+    return () => window.removeEventListener("scroll", closeOnScroll);
+  }, [open]);
+  useEffect(() => {
+    if (!open) return;
+
+    const handleClickOutside = (e: MouseEvent) => {
+      if (popupRef.current && !popupRef.current.contains(e.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
 
   return (
     <header className="py-4 border-b border-border mb-8">
@@ -61,9 +86,9 @@ export function Header() {
           >
             {isDark ? (
               // Sun icon
-            <Sun /> 
+              <Sun />
             ) : (
-             <Moon fill="dark"/> 
+              <Moon fill="dark" />
             )}
           </button>
         </nav>
@@ -82,7 +107,10 @@ export function Header() {
 
       {/* Mobile nav */}
       {menuOpen && (
-        <nav className="md:hidden border-t-0 border-border px-4 py-2 flex flex-col w-full items-end absolute">
+        <nav
+          ref={popupRef}
+          className="md:hidden bg-background blur(100px) backdrop-blur-sm z-10 m-0 border-border px-4 py-2 flex flex-col w-full items-end absolute"
+        >
           <Link
             href="/"
             className="block py-2 pr-6 text-lg font-semibold hover:underline"
