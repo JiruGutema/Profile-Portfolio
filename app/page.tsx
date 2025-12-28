@@ -30,8 +30,8 @@ export default function PortfolioPage() {
           <Education />
           <Separator className="bg-border" />
           <Experience />
-          <Separator className="bg-border" />
-          <SelectedProjects />
+          {/* <Separator className="bg-border" /> */}
+          {/* <SelectedProjects /> */}
           <Separator className="bg-border" />
           <Contribution />
           <Separator className="bg-border" />

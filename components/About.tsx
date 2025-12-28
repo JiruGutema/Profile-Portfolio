@@ -56,7 +56,7 @@ export default function About() {
       </p>
       <br />
       <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-        <Button className="rounded-sm border border-border text-primary-foreground hover:bg-primary/90">
+        <Button variant={"outline"} className="rounded-sm border  border-border">
           <span className="ml-2">View Resume</span>
         </Button>
       </Link>

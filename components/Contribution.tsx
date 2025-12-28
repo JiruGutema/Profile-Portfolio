@@ -22,7 +22,7 @@ export default function Contribution() {
             </p>
             <Link
               href="https://github.com/JiruGutema/react-next_folder"
-              className="text-black bg-white border rounded-sm border-black hover:underline p-2 text-sm mt-2 inline-block"
+              className="bg-background border rounded-sm border-border hover:underline p-2 text-sm mt-2 inline-block"
             >
               View Contribution
             </Link>
@@ -41,7 +41,7 @@ export default function Contribution() {
             </p>
             <Link
               href="https://github.com/mpopp75/db4free-net-l10n/graphs/contributors"
-              className="text-black bg-white border rounded-sm border-black hover:underline p-2 text-sm mt-2 inline-block"
+              className="bg-background border rounded-sm border-border hover:underline p-2 text-sm mt-2 inline-block"
             >
               View Contribution
             </Link>

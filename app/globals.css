@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
   /* --background: 0 0% 100%; */
+
+/* #0D1117 */
 @layer base {
   :root {
-    --background: 0 0% 90%;
+    --background: #0D1117;
     --foreground: 20 14.3% 4.1%;
 
     --card: 0 0% 95%;
@@ -40,12 +42,14 @@
    --card: 216 28% 12%; github theme card and background*/   
   /* Dark mode: GitHub-like (#0D1117) */
   .dark {
-    --background: 210 6% 10%;
-    --foreground: 210 40% 98%; /* Light text */
+    /* --background: 210 6% 10%; */
+
+    --background: 216, 28%, 7%;
+    --foreground: 210 40% 85%; /* Light text */
 
   
-    --card: 200 7% 11%;      /* Slightly lighter card background */
-    --card-foreground: 210 40% 98%;
+    --card: 216, 28%, 7%;
+    --card-foreground: 210 40% 85%;
 
     --popover: 216 28% 12%;
     --popover-foreground: 210 40% 98%;

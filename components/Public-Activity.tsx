@@ -30,7 +30,7 @@ export default function PublicActivity() {
 
             <Link
               href="https://nexustutorial.vercel.app/course/backend-dev-for-beginners"
-              className="text-black bg-white border rounded-sm border-black hover:underline p-2 text-sm mt-2 inline-block"
+              className="bg-background border rounded-sm border-border hover:underline p-2 text-sm mt-2 inline-block"
             >
               View Course
             </Link>
@@ -62,7 +62,7 @@ export default function PublicActivity() {
             </p>
             <Link
               href="https://nexustutorial.vercel.app/course/backend-dev-for-beginners"
-              className="text-black bg-white border rounded-sm border-black hover:underline p-2 text-sm mt-2 inline-block"
+              className="bg-background border rounded-sm border-border hover:underline p-2 text-sm mt-2 inline-block"
             >
               View Course
             </Link>
@@ -87,7 +87,7 @@ export default function PublicActivity() {
             </p>
             <Link
               href="https://www.linkedin.com/posts/jiru-gutema_a-certificate-from-gdsc-activity-7250769310120390656-5vNd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEd-fxwByr7erWREUfXW94sBGM8_vdEa7PM"
-              className="text-black rounded-sm bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
+              className="bg-background rounded-sm border border-border hover:underline p-2 text-sm mt-2 inline-block"
             >
               View Certificate
             </Link>
@@ -114,7 +114,7 @@ export default function PublicActivity() {
             </p>
             <Link
               href="https://www.credly.com/badges/8ba9a9c5-14e9-4a43-9f8f-3695e44c05a3"
-              className="text-black rounded-sm bg-white border border-black hover:underline p-2 text-sm mt-2 inline-block"
+              className="bg-background rounded-sm border border-border hover:underline p-2 text-sm mt-2 inline-block"
             >
               Check Certificate
             </Link>
