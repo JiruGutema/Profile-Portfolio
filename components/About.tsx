@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 export default function About() {
-
   return (
     <section>
       <h2 className="text-3xl font-normal font-serif  border-border pb-2 mb-4">
@@ -32,8 +31,7 @@ export default function About() {
           rel="noopener noreferrer"
         >
           Veritasium
-        </Link>
-        {" "}
+        </Link>{" "}
         ,
         <Link
           href="https://www.youtube.com/c/startalk"
@@ -42,8 +40,7 @@ export default function About() {
           rel="noopener noreferrer"
         >
           StarTalk
-        </Link>
-        {" "}
+        </Link>{" "}
         ,
         <Link
           href="https://www.youtube.com/c/3blue1brown"
@@ -54,10 +51,17 @@ export default function About() {
           3Blue1Brown
         </Link>
         ), always seeking to expand my perspective and creativity.
+      </p><br />
+      <p>
+        You can find my favourite playlist I listen to while coding <a className="text-blue-600 underline" href="https://open.spotify.com/playlist/1YIe34rcmLjCYpY9wJoM2p?si=3585a7cff5f743f6">here</a>
       </p>
       <br />
+
       <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-        <Button variant={"outline"} className="rounded-sm border  border-border">
+        <Button
+          variant={"outline"}
+          className="rounded-sm border  border-border"
+        >
           <span className="ml-2">View Resume</span>
         </Button>
       </Link>
