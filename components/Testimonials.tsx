@@ -3,7 +3,7 @@ import { Card, CardContent } from "./ui/card";
 export default function Testimonials() {
   return (
     <section>
-      <h2 className="text-3xl font-bold font-serif border-border pb-2 mb-4">
+      <h2 className="text-3xl font-normal font-serif border-border pb-2 mb-4">
         Testimonials
       </h2>
       <div className="grid gap-6">

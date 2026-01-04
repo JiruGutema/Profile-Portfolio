@@ -5,7 +5,7 @@ export default function About() {
 
   return (
     <section>
-      <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
+      <h2 className="text-3xl font-normal font-serif  border-border pb-2 mb-4">
         About Me
       </h2>
       <p className="text-base leading-relaxed mb-2">

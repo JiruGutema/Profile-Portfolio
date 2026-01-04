@@ -1,14 +1,14 @@
 export default function Education() {
   return (
     <section>
-      <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
+      <h2 className="text-3xl font-normal font-serif  border-border pb-2 mb-4">
         Education
       </h2>
       <div className="space-y-4">
         <article>
-          <h3 className="text-xl font-semibold font-serif">
+          <h6 className="text-xl font-semibold font-serif">
             BSc in Software Engineering
-          </h3>
+          </h6>
           <p className="text-base italic text-muted-foreground">
             Addis Ababa University | 01/2023 – 09/2027
           </p>
@@ -25,9 +25,9 @@ export default function Education() {
           </ul>
         </article>
         <article>
-          <h3 className="text-xl font-semibold font-serif">
+          <h6 className="text-xl font-semibold font-serif">
             Coding Academy (backed by Google)
-          </h3>
+          </h6>
           <p className="text-base italic text-muted-foreground">
             African to Silicon Valley | 01/2025 – 04/2025
           </p>
@@ -43,9 +43,9 @@ export default function Education() {
           </ul>
         </article>
         <article>
-          <h3 className="text-xl font-semibold font-serif">
+          <h6 className="text-xl font-semibold font-serif">
             Introduction to Cyber Security and Cryptography
-          </h3>
+          </h6>
           <p className="text-base italic text-muted-foreground">
             INSA Summer Program | 11/2024 – 01/2025
           </p>

@@ -6,7 +6,7 @@ import SocialLinks from "./Social-Links";
 export default function ContactMe() {
   return (
     <section id="contact">
-      <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
+      <h2 className="text-3xl font-normal font-serif  border-border pb-2 mb-4">
         Contact Me
       </h2>
       <p className="text-base leading-relaxed mb-4">

@@ -70,12 +70,12 @@ export function Header() {
         </a>
         {/* Desktop nav */}
         <nav className="hidden md:flex space-x-6 justify-center items-center">
-          <Link href="/" className="text-lg font-semibold hover:underline">
+          <Link href="/" className="text-lg underline font-thi hover:underline">
             Home
           </Link>
           <Link
             href="/projects"
-            className="text-lg font-semibold hover:underline"
+            className="text-lg font-normal underline hover:underline"
           >
             Projects
           </Link>
@@ -113,14 +113,14 @@ export function Header() {
         >
           <Link
             href="/"
-            className="block py-2 pr-6 text-lg font-semibold hover:underline"
+            className="block py-2 pr-6 text-lg font-normal hover:underline"
             onClick={() => setMenuOpen(false)}
           >
             Home
           </Link>
           <Link
             href="/projects"
-            className="block py-2 pr-6 text-lg font-semibold hover:underline"
+            className="block py-2 pr-6 text-lg font-normal hover:underline"
             onClick={() => setMenuOpen(false)}
           >
             Projects

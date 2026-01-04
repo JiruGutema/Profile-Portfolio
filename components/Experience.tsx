@@ -1,27 +1,25 @@
 export default function Experience() {
   return (
     <section>
-      <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
+      <h2 className="text-3xl font-normal font-serif  border-border pb-2 mb-4">
         Experience
       </h2>
       <div className="space-y-4">
         <article>
-          <h3 className="text-xl font-semibold font-serif">
+          <h6 className="text-xl font-serif font-bold ">
             Backend Developer @ Gulit
-          </h3>
+          </h6>
           <p className="text-base text-muted-foreground">
-            Gulit | 05/2025 – 10/2025
+            Gulit | 05/2025 – 12/2025
           </p>
           <p className="text-base text-muted-foreground">
             Addis Ababa, Ethiopia
           </p>
           <ul className="list-disc list-inside text-base mt-2">
             <li>
-              Designed and implemented backend services for{" "}
-              <strong>authentication</strong>,<strong>admin dashboards</strong>,
-              and <strong>user management</strong>
-              using <strong>Express.js</strong>, <strong>PostgreSQL</strong>,
-              and <strong>Redis</strong>.
+              Designed and implemented backend services for authentication,
+              admin dashboards, and user management using Express.js,
+              PostgreSQL, and Redis.
             </li>
             <li>
               Developed secure APIs for user authentication, role-based access
@@ -35,9 +33,9 @@ export default function Experience() {
         </article>
 
         <article>
-          <h3 className="text-xl font-semibold font-serif">
-            Fullstack Developer @BewideTechnologies
-          </h3>
+          <h6 className="text-xl font-bold font-serif">
+            {"  "}Fullstack Developer @BewideTechnologies
+          </h6>
           <p className="text-base text-muted-foreground">
             Bewide Technologies | 07/2025 – 09/2025
           </p>
@@ -47,16 +45,16 @@ export default function Experience() {
           <ul className="list-disc list-inside text-base mt-2">
             <li>
               I was a Fullstack Developer Intern at Bewide Technologies, where I
-              worked on a full stack furniture eCommerce application for a client. I
-              implemented it using Next.js as a full stack framework.
+              worked on a full stack furniture eCommerce application for a
+              client. I implemented it using Next.js as a full stack framework.
             </li>
             <li>Technologies used: Docker, Next.js, PostgreSQL, Cloudinary</li>
           </ul>
         </article>
         <article>
-          <h3 className="text-xl font-semibold font-serif">
+          <h6 className="text-xl  font-bold font-serif">
             FullStack Developer Freelance EasyEnjaz
-          </h3>
+          </h6>
           <p className="text-base text-muted-foreground">
             EasyEnjaz | 02/2025 – 05/2025
           </p>
@@ -73,9 +71,9 @@ export default function Experience() {
           </ul>
         </article>
         <article>
-          <h3 className="text-xl font-semibold font-serif">
+          <h6 className="text-xl font-bold  font-serif">
             Backend Developer Intern @Ethioware
-          </h3>
+          </h6>
           <p className="text-base text-muted-foreground">
             Ethioware | 02/2025 – 05/2025
           </p>
