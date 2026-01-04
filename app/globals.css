@@ -4,6 +4,7 @@
 /* --background: 0 0% 100%; */
 
 /* #0D1117 */
+/* 217, 33%, 18% */
 @layer base {
   :root {
     --background: #0D1117;
@@ -45,12 +46,12 @@
   .dark {
     /* --background: 210 6% 10%; */
 
-    --background: 216, 28%, 7%;
+    --background: 217, 33%, 18%;
     --foreground: 210 40% 85%;
     /* Light text */
 
 
-    --card: 216, 28%, 7%;
+    --card: 217, 33%, 18%;
     --card-foreground: 210 40% 85%;
 
     --popover: 216 28% 12%;
@@ -71,7 +72,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 28% 18%;
+    --border: 217 28% 38%;
     --input: 217 28% 18%;
     --ring: 210 40% 98%;
 

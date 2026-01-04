@@ -21,7 +21,7 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
         >
           <Github
-            className="cursor-pointer text-zinc-700 hover:scale-125 hover:text-black"
+            className="cursor-pointer text-blue-500 hover:scale-125 hover:text-black"
             size={20}
           />
         </a>{" "}
@@ -31,7 +31,7 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
         >
           <Code2Icon
-            className="cursor-pointer  text-zinc-700 hover:scale-125 hover:text-black "
+            className="cursor-pointer  text-blue-500 hover:scale-125 hover:text-black "
             size={20}
             
           />
@@ -42,7 +42,7 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
         >
           <Send
-            className="cursor-pointer text-zinc-700 hover:scale-125 hover:text-cyan-500"
+            className="cursor-pointer text-blue-500 hover:scale-125 hover:text-cyan-500"
             size={20}
           />
         </a>
@@ -52,7 +52,7 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
         >
           <Linkedin
-            className="cursor-pointer text-zinc-700 hover:scale-125 hover:text-blue-500"
+            className="cursor-pointer text-blue-500 hover:scale-125 hover:text-blue-500"
             size={20}
           />
         </a>
@@ -62,7 +62,7 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
         >
           <Instagram
-            className="cursor-pointer text-zinc-700 hover:scale-125 hover:text-pink-600"
+            className="cursor-pointer text-blue-500 hover:scale-125 hover:text-pink-600"
             size={20}
           />
         </a>
@@ -72,7 +72,7 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
         >
           <Twitter
-            className="cursor-pointer text-zinc-700 hover:scale-125 hover:text-blue-500"
+            className="cursor-pointer text-blue-500 hover:scale-125 hover:text-blue-500"
             size={20}
           />
         </a>
@@ -82,7 +82,7 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
         >
           <Mail
-            className="cursor-pointer text-zinc-700 hover:scale-125 hover:text-green-500"
+            className="cursor-pointer text-blue-500 hover:scale-125 hover:text-green-500"
             size={20}
           />
         </a>
