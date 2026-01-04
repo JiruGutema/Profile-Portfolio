@@ -1,6 +1,6 @@
 import { ProjectDetailCard } from "@/components/Project-Detail-Card"
 import { Separator } from "@/components/ui/separator"
-import {projects} from "../../components/data/projects"
+import { projects } from "../../components/data/projects"
 
 export default function ProjectsPage() {
 
@@ -14,7 +14,7 @@ export default function ProjectsPage() {
         {projects.map((project, index) => (
           <div key={index}>
             <ProjectDetailCard {...project} />
-            {index < projects.length - 1 && <Separator className="bg-border my-8" />}
+
           </div>
         ))}
       </div>

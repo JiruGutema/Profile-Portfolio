@@ -10,7 +10,7 @@ export default function Contribution() {
       <div className="grid gap-6">
         <Card className="border border-border rounded-sm shadow-none">
           <CardHeader>
-            <CardTitle className="text-xl font-bold font-serif">
+            <CardTitle className="text-xl font-normal font-serif">
               React-Next-Folder Creator
             </CardTitle>
           </CardHeader>
@@ -30,7 +30,7 @@ export default function Contribution() {
         </Card>
         <Card className="border border-border rounded-sm shadow-none">
           <CardHeader>
-            <CardTitle className="text-xl font-bold font-serif">
+            <CardTitle className="text-xl font-normal font-serif">
               db4free-net-l10n
             </CardTitle>
           </CardHeader>

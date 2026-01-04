@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 export default function About() {
+
   return (
     <section>
       <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">

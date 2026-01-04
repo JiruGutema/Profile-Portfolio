@@ -16,20 +16,20 @@ export default function ProfileContainer() {
             alt="Jiru Gutema Profile"
             layout="fill"
             objectFit="cover"
-            className="rounded-full cursor-pointer border-2 border-foreground"
-            onClick={()=>{
-              window.open('/images/profile_1.png','_blank');
+            className="rounded-none cursor-pointer "
+            onClick={() => {
+              window.open('/images/profile_1.png', '_blank');
             }}
           />
         </div>
-        <h2 className="text-3xl font-bold font-serif mb-1">Jiru Gutema</h2>
+        <h2 className="text-3xl font-normal font-serif mb-1">Jiru Gutema</h2>
         <p className="text-lg text-muted-foreground">
           Software Engineer | Fullstack Developer
         </p>
         <p className="text-sm text-muted-foreground">Addis Ababa, Ethiopia</p>
         <div className="flex justify-center">
 
-        <SocialLinks/>
+          <SocialLinks />
         </div>
       </CardContent>
     </Card>

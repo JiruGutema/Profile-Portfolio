@@ -4,7 +4,7 @@ export default function Languages() {
   return (
     <Card className="border border-border rounded-sm shadow-none">
       <CardHeader>
-        <CardTitle className="text-2xl font-bold font-serif">
+        <CardTitle className="text-2xl font-normal font-serif">
           Languages
         </CardTitle>
       </CardHeader>

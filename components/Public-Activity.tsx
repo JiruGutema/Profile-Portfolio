@@ -4,13 +4,13 @@ import Link from "next/link";
 export default function PublicActivity() {
   return (
     <section>
-      <h2 className="text-3xl font-bold font-serif  border-border pb-2 mb-4">
+      <h2 className="text-3xl font-normal font-serif  border-border pb-2 mb-4">
         Public Activity
       </h2>
       <div className="grid gap-6">
         <Card className="border border-border rounded-sm shadow-none">
           <CardHeader>
-            <CardTitle className="text-xl font-bold font-serif">
+            <CardTitle className="text-xl font-normal font-serif">
               Reactjs and Nextjs Mentor
             </CardTitle>
           </CardHeader>
@@ -38,7 +38,7 @@ export default function PublicActivity() {
         </Card>
         <Card className="border border-border rounded-sm shadow-none">
           <CardHeader>
-            <CardTitle className="text-xl font-bold font-serif">
+            <CardTitle className="text-xl font-normal font-serif">
               Backend and DSA Mentor
             </CardTitle>
           </CardHeader>
@@ -70,7 +70,7 @@ export default function PublicActivity() {
         </Card>
         <Card className="border border-border rounded-sm shadow-none">
           <CardHeader>
-            <CardTitle className="text-xl font-bold font-serif">
+            <CardTitle className="text-xl font-normal font-serif">
               Frontend Mentor
             </CardTitle>
           </CardHeader>
@@ -95,7 +95,7 @@ export default function PublicActivity() {
         </Card>
         <Card className="border border-border rounded-sm shadow-none">
           <CardHeader>
-            <CardTitle className="text-xl font-bold font-serif">
+            <CardTitle className="text-xl font-normal font-serif">
               Core Team Member
             </CardTitle>
           </CardHeader>

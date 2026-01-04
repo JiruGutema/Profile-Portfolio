@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  /* --background: 0 0% 100%; */
+/* --background: 0 0% 100%; */
 
 /* #0D1117 */
 @layer base {
@@ -36,18 +36,20 @@
 
     --link: 20 14.3% 4.1%;
 
-    --radius: 0.5rem;
+    --radius: 0;
   }
+
   /*--background: 217 28% 7%;
-   --card: 216 28% 12%; github theme card and background*/   
+   --card: 216 28% 12%; github theme card and background*/
   /* Dark mode: GitHub-like (#0D1117) */
   .dark {
     /* --background: 210 6% 10%; */
 
     --background: 216, 28%, 7%;
-    --foreground: 210 40% 85%; /* Light text */
+    --foreground: 210 40% 85%;
+    /* Light text */
 
-  
+
     --card: 216, 28%, 7%;
     --card-foreground: 210 40% 85%;
 
@@ -74,84 +76,87 @@
     --ring: 210 40% 98%;
 
     --link: 210 40% 98%;
-  
+
   }
 
+  body {
+    @apply bg-background text-foreground font-serif;
+    margin: 0 auto;
+  }
+
+  /* Mobile: width 100% */
+  @media (max-width: 640px) {
     body {
-      @apply bg-background text-foreground font-serif;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  /* Tablet: width 95% */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    body {
+      width: 95%;
       margin: 0 auto;
     }
+  }
 
-    /* Mobile: width 100% */
-    @media (max-width: 640px) {
-      body {
-        width: 100%;
-        margin: 0;
-      }
+  /* Desktop: width 80% */
+  @media (min-width: 1025px) {
+    body {
+      width: 80%;
+      margin: 0 auto;
     }
+  }
 
-    /* Tablet: width 95% */
-    @media (min-width: 641px) and (max-width: 1024px) {
-      body {
-        width: 95%;
-        margin: 0 auto;
-      }
+  /* High-density / Retina displays: general tweaks (font smoothing, image rendering) */
+  @media (min-resolution: 2dppx),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min--moz-device-pixel-ratio: 2) {
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      image-rendering: -webkit-optimize-contrast;
     }
+  }
 
-    /* Desktop: width 80% */
-    @media (min-width: 1025px) {
-      body {
-        width: 80%;
-        margin: 0 auto;
-      }
+  /* Combine width + density checks if you need different layout for high-density devices */
+  @media (max-width: 640px) and (min-resolution: 2dppx),
+  (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2),
+  (max-width: 640px) and (min--moz-device-pixel-ratio: 2) {
+    body {
+      /* same layout but can adjust typography or spacing for retina if needed */
+      width: 100%;
+      margin: 0;
+      /* example: slightly reduce base font-size on very high DPI devices */
+      /* font-size: 0.99rem; */
     }
+  }
 
-    /* High-density / Retina displays: general tweaks (font smoothing, image rendering) */
-    @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2) {
-      body {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        image-rendering: -webkit-optimize-contrast;
-      }
+  @media (min-width: 641px) and (max-width: 1024px) and (min-resolution: 2dppx),
+  (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 641px) and (max-width: 1024px) and (min--moz-device-pixel-ratio: 2) {
+    body {
+      width: 95%;
+      margin: 0 auto;
     }
+  }
 
-    /* Combine width + density checks if you need different layout for high-density devices */
-    @media (max-width: 640px) and (min-resolution: 2dppx),
-           (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2),
-           (max-width: 640px) and (min--moz-device-pixel-ratio: 2) {
-      body {
-        /* same layout but can adjust typography or spacing for retina if needed */
-        width: 100%;
-        margin: 0;
-        /* example: slightly reduce base font-size on very high DPI devices */
-        /* font-size: 0.99rem; */
-      }
+  @media (min-width: 1025px) and (min-resolution: 2dppx),
+  (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1025px) and (min--moz-device-pixel-ratio: 2) {
+    body {
+      width: 80%;
+      margin: 0 auto;
     }
-
-    @media (min-width: 641px) and (max-width: 1024px) and (min-resolution: 2dppx),
-           (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-           (min-width: 641px) and (max-width: 1024px) and (min--moz-device-pixel-ratio: 2) {
-      body {
-        width: 95%;
-        margin: 0 auto;
-      }
-    }
-
-    @media (min-width: 1025px) and (min-resolution: 2dppx),
-           (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2),
-           (min-width: 1025px) and (min--moz-device-pixel-ratio: 2) {
-      body {
-        width: 80%;
-        margin: 0 auto;
-      }
-    }
+  }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200 !important;
 
-.glass {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }

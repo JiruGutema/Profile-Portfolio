@@ -56,17 +56,17 @@ export function ProjectDetailCard({
       id={`project-${id}`}
     >
       <CardHeader>
-        <CardTitle className="text-2xl font-bold font-serif">{title}</CardTitle>
+        <CardTitle className="text-2xl font-semibold font-serif">{title}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <p className="text-base text-muted-foreground">{description}</p>
         {note && <i className="text-sm italic mt-0 text-muted-foreground">{note}</i>}
         <div>
-          <h3 className="text-lg font-semibold">Technologies Used:</h3>
+          <h3 className="text-lg font-normal">Technologies Used:</h3>
           <p className="text-base">{technologies.join(", ")}</p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold">
+          <h3 className="text-lg font-normal">
             Key Features & Contributions:
           </h3>
           <ul className="list-disc list-inside text-base space-y-1">
@@ -83,8 +83,8 @@ export function ProjectDetailCard({
                 hideyoutubeuser > 10000
                   ? "#16a34a"
                   : hideyoutubeuser > 1000
-                  ? "#eab308"
-                  : "#ef4444",
+                    ? "#eab308"
+                    : "#ef4444",
               fontWeight: "bold",
               textShadow: "0 0 8px rgba(255,255,0,0.5)",
             }}
@@ -102,8 +102,8 @@ export function ProjectDetailCard({
                 hideyoutubeuser > 10000
                   ? "#16a34a"
                   : hideyoutubeuser > 1000
-                  ? "#eab308"
-                  : "#ef4444",
+                    ? "#eab308"
+                    : "#ef4444",
               fontWeight: "bold",
               textShadow: "0 0 8px rgba(255,255,0,0.5)",
             }}
@@ -138,7 +138,6 @@ export function ProjectDetailCard({
             </Link>
           )}
           {title.includes("Email Craft") && (
-            
             <Link
               href="https://www.youtube.com/watch?v=Abs08REbc4o"
               target="_blank"
