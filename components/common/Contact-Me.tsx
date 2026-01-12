@@ -1,5 +1,5 @@
 import { Mail, Phone, Github, Linkedin, X } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Link from "next/link";
 import SocialLinks from "./Social-Links";
 

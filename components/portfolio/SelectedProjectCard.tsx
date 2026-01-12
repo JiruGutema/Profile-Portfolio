@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 import { User } from "lucide-react";
 
 export type SelectedProjectCardProps = {

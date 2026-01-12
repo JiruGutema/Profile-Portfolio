@@ -25,7 +25,7 @@ export const projects = [
       "Features custom backend guards to protect sensitive routes and operations.",
       "Demonstrates proficiency in full-stack development, OAuth integration, and secure API design.",
     ],
-    liveDemoLink: "https://email-craft.vercel.app/",
+    liveDemoLink: "https://email-craft-olive.vercel.app/",
     githubLink: "https://github.com/JiruGutema/email-craft",
   },
 
@@ -243,4 +243,3 @@ export const projects = [
     githubLink: "https://github.com/JiruGutema/FileShare-Hub",
   },
 ];
-

@@ -1,4 +1,4 @@
-import { CardHeader, CardTitle, CardContent, Card } from "./ui/card";
+import { CardHeader, CardTitle, CardContent, Card } from "../ui/card";
 
 export default function Languages() {
   return (

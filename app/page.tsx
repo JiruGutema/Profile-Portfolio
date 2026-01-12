@@ -1,16 +1,16 @@
 import { Separator } from "@/components/ui/separator";
-import ContactMe from "@/components/Contact-Me";
-import ProfileContainer from "@/components/Profile-Container";
-import Skill from "@/components/Skill";
-import Languages from "@/components/Languages";
-import About from "@/components/About";
-import Education from "@/components/Education";
-import Experience from "@/components/Experience";
-import SelectedProjects from "@/components/Selected-Projects";
-import Contribution from "@/components/Contribution";
-import PublicActivity from "@/components/Public-Activity";
-import Testimonials from "@/components/Testimonials";
-import SecondaryHeader from "@/components/Secondary-Header";
+import ContactMe from "@/components/common/Contact-Me";
+import ProfileContainer from "@/components/profile/Profile-Container";
+import Skill from "@/components/profile/Skill";
+import Languages from "@/components/profile/Languages";
+import About from "@/components/profile/About";
+import Education from "@/components/profile/Education";
+import Experience from "@/components/profile/Experience";
+import SelectedProjects from "@/components/portfolio/Selected-Projects";
+import Contribution from "@/components/portfolio/Contribution";
+import PublicActivity from "@/components/portfolio/Public-Activity";
+import Testimonials from "@/components/profile/Testimonials";
+import SecondaryHeader from "@/components/layout/Secondary-Header";
 
 export default function PortfolioPage() {
   return (

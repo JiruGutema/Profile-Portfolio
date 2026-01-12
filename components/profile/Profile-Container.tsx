@@ -1,10 +1,10 @@
 'use client';
 import { Mail, Github, Linkedin } from "lucide-react";
-import { Button } from "./ui/button";
-import { Card, CardContent } from "./ui/card";
+import { Button } from "../ui/button";
+import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import SocialLinks from "./Social-Links";
+import SocialLinks from "../common/Social-Links";
 
 export default function ProfileContainer() {
   return (
