@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { BlogPost, generateSlug } from "@/app/blogs/data/blog-posts";
-import { Calendar, Clock, Heart, ThumbsDown, User } from "lucide-react";
+import { Calendar, Clock, ThumbsUpIcon, ThumbsDown, User } from "lucide-react";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -64,7 +64,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           {/* Reactions preview */}
           <div className="flex items-center space-x-3">
             <div className="flex items-center space-x-1">
-              <Heart className="w-4 h-4 text-red-500" />
+              <ThumbsUpIcon className="w-4 h-4 text-gray-500" />
               <span>{post.likes}</span>
             </div>
             <div className="flex items-center space-x-1">
