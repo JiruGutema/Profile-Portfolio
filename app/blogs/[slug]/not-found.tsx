@@ -5,12 +5,8 @@ export default function NotFound() {
   return (
     <div className="max-w-2xl mx-auto text-center py-16">
       <div className="space-y-6">
-        {/* Icon */}
-        <div className="flex justify-center">
-          <FileX className="w-24 h-24 text-muted-foreground" />
-        </div>
+    
 
-        {/* Title and description */}
         <div className="space-y-3">
           <h1 className="text-3xl font-bold text-foreground">
             Blog Post Not Found
@@ -20,7 +16,6 @@ export default function NotFound() {
           </p>
         </div>
 
-        {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
           <Link
             href="/blogs"

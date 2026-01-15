@@ -1,9 +1,11 @@
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import { ArrowLeft, Calendar, Clock, User, Tag } from 'lucide-react';
-import { getBlogPosts, generateSlug } from '../data/blog-posts';
-import MarkdownRenderer from '@/components/blog/MarkdownRenderer';
-import BlogReactions from '@/components/blog/BlogReactions';
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { ArrowLeft, Calendar, Clock, User, Tag } from "lucide-react";
+import { getBlogPosts } from "../data/blog-posts";
+import MarkdownRenderer from "@/components/blog/MarkdownRenderer";
+import BlogReactions from "@/components/blog/BlogReactions";
+import { BlogPost } from "@/lib/types";
+import { baseUrl, generateSlug } from "@/lib/utils";
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -11,10 +13,12 @@ interface BlogPostPageProps {
   }>;
 }
 
-export  default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const posts = getBlogPosts();
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
-  const post = posts.find(p => generateSlug(p.title) === slug);
+  const response = await fetch(`${baseUrl}/api/blogs/${slug}`).then((res) =>
+    res.json(),
+  );
+  const post: BlogPost = response.data;
 
   if (!post) {
     notFound();
@@ -38,7 +42,7 @@ export  default async function BlogPostPage({ params }: BlogPostPageProps) {
         <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
           {post.title}
         </h1>
-        
+
         <p className="text-xl text-muted-foreground leading-relaxed">
           {post.excerpt}
         </p>
@@ -49,19 +53,21 @@ export  default async function BlogPostPage({ params }: BlogPostPageProps) {
             <User className="w-4 h-4" />
             <span>{post.author}</span>
           </div>
-          
+
           <div className="flex items-center space-x-2">
             <Calendar className="w-4 h-4" />
-            <span>{new Date(post.publishedAt).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}</span>
+            <span>
+              {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </span>
           </div>
-          
+
           <div className="flex items-center space-x-2">
             <Clock className="w-4 h-4" />
-            <span>{post.readTime}</span>
+            <span>{post.readTime.toString()}</span>
           </div>
         </div>
 
@@ -89,7 +95,7 @@ export  default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Reactions */}
       <div className="mb-12">
         <BlogReactions
-          postId={post.id}
+          postId={post.id.toString()}
           initialLikes={post.likes}
           initialDislikes={post.dislikes}
         />
@@ -119,34 +125,35 @@ export function generateStaticParams() {
 }
 
 // Generate metadata for SEO
-export async function  generateMetadata({ params }: BlogPostPageProps) {
+export async function generateMetadata({ params }: BlogPostPageProps) {
   const posts = getBlogPosts();
   const { slug } = await params;
-  const post = posts.find(p => generateSlug(p.title) === slug);
+  const post = posts.find((p) => generateSlug(p.title) === slug);
 
   if (!post) {
     return {
-      title: 'Post Not Found',
+      title: "Post Not Found",
     };
   }
 
   return {
     title: `${post.title} | Jiru Gutema Blog`,
     description: post.excerpt,
-    keywords: post.tags.join(', '),
+    keywords: post.tags.join(", "),
     authors: [{ name: post.author }],
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      type: 'article',
+      type: "article",
       publishedTime: post.publishedAt,
       authors: [post.author],
       tags: post.tags,
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
     },
   };
 }
+

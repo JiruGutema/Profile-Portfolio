@@ -2,7 +2,6 @@
 import { Github, Moon, Sun } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-import { Button } from "../ui/button";
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -37,9 +36,9 @@ export function Header() {
 
     window.addEventListener("scroll", closeOnScroll);
     return () => window.removeEventListener("scroll", closeOnScroll);
-  }, [open]);
+  }, [menuOpen]);
   useEffect(() => {
-    if (!open) return;
+    if (!menuOpen) return;
 
     const handleClickOutside = (e: MouseEvent) => {
       if (popupRef.current && !popupRef.current.contains(e.target as Node)) {
@@ -51,7 +50,7 @@ export function Header() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [open]);
+  }, [menuOpen]);
 
   return (
     <header className="py-4 border-b border-border mb-8">

@@ -1,7 +1,7 @@
 "use client";
 
-import ReactMarkdown from 'react-markdown';
-import CodeBlock from './CodeBlock';
+import ReactMarkdown from "react-markdown";
+import CodeBlock from "./CodeBlock";
 
 interface MarkdownRendererProps {
   content: string;
@@ -12,19 +12,19 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
     <div className="prose prose-gray dark:prose-invert max-w-none">
       <ReactMarkdown
         components={{
-          code({ node, inline, className, children, ...props }) {
-            const match = /language-(\w+)/.exec(className || '');
-            
-            if (!inline && match) {
+          code({ node, className, children, ...props }) {
+            const match = /language-(\w+)/.exec(className || "");
+
+            if (match) {
               return (
                 <CodeBlock className={className}>
-                  {String(children).replace(/\n$/, '')}
+                  {String(children).replace(/\n$/, "")}
                 </CodeBlock>
               );
             }
-            
+
             return (
-              <code 
+              <code
                 className="px-1.5 py-0.5 rounded-md bg-muted text-muted-foreground font-mono text-sm"
                 {...props}
               >
@@ -54,11 +54,7 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
             );
           },
           p({ children }) {
-            return (
-              <p className="text-foreground leading-7 mb-4">
-                {children}
-              </p>
-            );
+            return <p className="text-foreground leading-7 mb-4">{children}</p>;
           },
           ul({ children }) {
             return (
@@ -75,24 +71,18 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
             );
           },
           li({ children }) {
-            return (
-              <li className="text-foreground">
-                {children}
-              </li>
-            );
+            return <li className="text-foreground">{children}</li>;
           },
           blockquote({ children }) {
             return (
               <blockquote className="border-l-4 border-primary pl-4 py-2 my-4 bg-muted/50 rounded-r-md">
-                <div className="text-muted-foreground italic">
-                  {children}
-                </div>
+                <div className="text-muted-foreground italic">{children}</div>
               </blockquote>
             );
           },
           a({ href, children }) {
             return (
-              <a 
+              <a
                 href={href}
                 className="text-primary hover:text-primary/80 underline underline-offset-2"
                 target="_blank"
@@ -110,12 +100,8 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
             );
           },
           em({ children }) {
-            return (
-              <em className="italic text-foreground">
-                {children}
-              </em>
-            );
-          }
+            return <em className="italic text-foreground">{children}</em>;
+          },
         }}
       >
         {content}

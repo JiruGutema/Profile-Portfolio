@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { BlogPost, generateSlug } from "@/app/blogs/data/blog-posts";
 import { Calendar, Clock, ThumbsUpIcon, ThumbsDown, User } from "lucide-react";
+import { generateSlug } from "@/lib/utils";
+import { BlogPost } from "@/lib/types";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -16,18 +17,13 @@ export default function BlogCard({ post }: BlogCardProps) {
       <div className="space-y-4">
         {/* Header */}
         <div className="space-y-2">
-          <Link 
-            href={`/blogs/${slug}`}
-            className="block group"
-          >
+          <Link href={`/blogs/${slug}`} className="block group">
             <h2 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">
               {post.title}
             </h2>
           </Link>
-          
-          <p className="text-muted-foreground line-clamp-3">
-            {post.excerpt}
-          </p>
+
+          <p className="text-muted-foreground line-clamp-3">{post.excerpt}</p>
         </div>
 
         {/* Tags */}
@@ -49,15 +45,15 @@ export default function BlogCard({ post }: BlogCardProps) {
               <User className="w-4 h-4" />
               <span>{post.author}</span>
             </div>
-            
+
             <div className="flex items-center space-x-1">
               <Calendar className="w-4 h-4" />
               <span>{new Date(post.publishedAt).toLocaleDateString()}</span>
             </div>
-            
+
             <div className="flex items-center space-x-1">
               <Clock className="w-4 h-4" />
-              <span>{post.readTime}</span>
+              <span>{post.readTime.toString()}</span>
             </div>
           </div>
 
