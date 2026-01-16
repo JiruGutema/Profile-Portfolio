@@ -3,6 +3,7 @@ import BlogCard from "@/components/blog/BlogCard";
 import { BlogPost } from "@/lib/types";
 import { baseUrl } from "@/lib/utils";
 import "dotenv/config";
+import { Suspense } from "react";
 
 export default async function BlogPage() {
   const res = await fetch(`${baseUrl}/api/blogs`, { cache: "no-store" }).then(
@@ -24,10 +25,13 @@ export default async function BlogPage() {
       {/* Blog posts grid */}
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-1">
         {posts.map((post) => (
-          <BlogCard
+      
+               <Suspense fallback={<div>Loading content...</div>}>
+                        <BlogCard
             key={post.id}
             post={{ ...post, tags: Array.isArray(post.tags) ? post.tags : [] }}
           />
+                  </Suspense>
         ))}
       </div>
 
