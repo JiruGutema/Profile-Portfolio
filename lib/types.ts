@@ -6,7 +6,7 @@ export interface BlogPost {
   slug: string;
   author: string;
   publishedAt: Date;
-  readTime: Date;
+  readTime: string;
   tags: string[];
   likes: number;
   dislikes: number;

@@ -1,28 +1,40 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, User, Tag } from "lucide-react";
-import { getBlogPosts } from "../data/blog-posts";
 import MarkdownRenderer from "@/components/blog/MarkdownRenderer";
 import BlogReactions from "@/components/blog/BlogReactions";
 import { BlogPost } from "@/lib/types";
-import { baseUrl, generateSlug } from "@/lib/utils";
+import prisma from "@/lib/prisma";
 
 interface BlogPostPageProps {
-  params: Promise<{
+  params: {
     slug: string;
-  }>;
+  };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
-  const response = await fetch(`${baseUrl}/api/blogs/${slug}`).then((res) =>
-    res.json(),
-  );
-  const post: BlogPost = response.data;
+  const res = await prisma.blogPost.findFirst({
+    where: { slug: slug },
+  });
 
-  if (!post) {
+  if (!res) {
     notFound();
   }
+  const post: BlogPost = {
+    id: res.id,
+    title: res.title,
+    excerpt: res.excerpt,
+    content: res.content,
+    author: res.author,
+    publishedAt: res.publishedAt,
+    readTime: res.readTime,
+    tags: res.tags.split(",").map((tag) => tag.trim()),
+    likes: res.likes,
+    slug: res.slug,
+    dislikes: res.dislikes,
+    coverImage: res.coverImage ? res.coverImage : undefined,
+  };
 
   return (
     <article className="max-w-4xl mx-auto">
@@ -116,19 +128,30 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   );
 }
 
-// Generate static params for all blog posts
-export function generateStaticParams() {
-  const posts = getBlogPosts();
-  return posts.map((post) => ({
-    slug: generateSlug(post.title),
-  }));
-}
-
 // Generate metadata for SEO
 export async function generateMetadata({ params }: BlogPostPageProps) {
-  const posts = getBlogPosts();
   const { slug } = await params;
-  const post = posts.find((p) => generateSlug(p.title) === slug);
+  const res = await prisma.blogPost.findFirst({
+    where: { slug: slug },
+  });
+
+  if (!res) {
+    notFound();
+  }
+  const post: BlogPost = {
+    id: res.id,
+    title: res.title,
+    excerpt: res.excerpt,
+    content: res.content,
+    author: res.author,
+    publishedAt: res.publishedAt,
+    readTime: res.readTime,
+    tags: res.tags.split(",").map((tag) => tag.trim()),
+    likes: res.likes,
+    slug: res.slug,
+    dislikes: res.dislikes,
+    coverImage: res.coverImage ? res.coverImage : undefined,
+  };
 
   if (!post) {
     return {
@@ -145,7 +168,7 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
       title: post.title,
       description: post.excerpt,
       type: "article",
-      publishedTime: post.publishedAt,
+      publishedTime: post.publishedAt.toLocaleDateString(),
       authors: [post.author],
       tags: post.tags,
     },
@@ -156,4 +179,3 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
     },
   };
 }
-

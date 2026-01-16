@@ -1,7 +1,5 @@
 import type { NextRequest } from "next/server";
-import { generateSlug } from "@/lib/utils";
 import type { BlogPost } from "@/lib/types";
-import { blogPosts } from "../data";
 import prisma from "@/lib/prisma";
 
 export async function GET(
