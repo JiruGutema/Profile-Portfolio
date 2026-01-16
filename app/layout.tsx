@@ -66,7 +66,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className} style={{ scrollBehavior: "smooth" }} >
         <Header />
-        <main className="min-h-[calc(100vh-144px)]">
+        <main className="">
           {" "}
           <MagazineLayout>{children}</MagazineLayout>
         </main>

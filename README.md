@@ -1,24 +1,43 @@
 # Jiru Gutema's Profile Portfolio
 
-This is a personal portfolio website to showcase my projects and skills.
+Personal portfolio website with blog management system.
 
-## Technologies Used
+## Technologies
 
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Shadcn/ui](https://ui.shadcn.com/)
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+- Prisma ORM
+- PostgreSQL
+- bcrypt + JWT authentication
 
 ## Getting Started
 
-First, run the development server:
-
+Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Set up environment variables in `.env`:
+```env
+DATABASE_URL="your-postgresql-url"
+JWT_SECRET="your-secret-key"
+```
+
+Run development server:
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+## Admin System for Blogs
+
+Create an admin user:
+```bash
+npx tsx scripts/create-admin.ts admin@example.com password "Admin Name"
+```
+
+Access admin panel at `/admin/login`
+
+

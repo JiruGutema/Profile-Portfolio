@@ -10,6 +10,7 @@ export default async function BlogPage() {
     (res) => res.json(),
   );
   const posts: BlogPost[] = res.data;
+  console.log("posts", posts)
 
   return (
     <div className="space-y-8">
