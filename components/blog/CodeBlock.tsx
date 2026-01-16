@@ -13,9 +13,11 @@ interface CodeBlockProps {
 export default function CodeBlock({ children, className }: CodeBlockProps) {
   const [isDark, setIsDark] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   // Check for dark mode
   useEffect(() => {
+    setMounted(true);
     const checkDarkMode = () => {
       setIsDark(document.documentElement.classList.contains('dark'));
     };
@@ -31,6 +33,15 @@ export default function CodeBlock({ children, className }: CodeBlockProps) {
     
     return () => observer.disconnect();
   }, []);
+
+  // Prevent hydration mismatch by not rendering syntax highlighter until mounted
+  if (!mounted) {
+    return (
+      <pre className="p-4 rounded-lg bg-muted overflow-x-auto">
+        <code className="text-sm font-mono">{children}</code>
+      </pre>
+    );
+  }
 
   const language = className?.replace('language-', '') || 'text';
   

@@ -1,26 +1,30 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, User, Tag } from "lucide-react";
-import MarkdownRenderer from "@/components/blog/MarkdownRenderer";
 import BlogReactions from "@/components/blog/BlogReactions";
+import MarkdownRenderer from "@/components/blog/MarkdownRenderer";
 import { BlogPost } from "@/lib/types";
 import prisma from "@/lib/prisma";
+import { Suspense } from "react";
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
+
   const res = await prisma.blogPost.findFirst({
-    where: { slug: slug },
+    where: { slug },
   });
 
   if (!res) {
     notFound();
   }
+
+  // Preprocess data
   const post: BlogPost = {
     id: res.id,
     title: res.title,
@@ -33,8 +37,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     likes: res.likes,
     slug: res.slug,
     dislikes: res.dislikes,
-    coverImage: res.coverImage ? res.coverImage : undefined,
+    coverImage: res.coverImage || undefined,
   };
+
+  // Format date as a string to avoid hydration mismatch
+  const formattedDate = new Date(post.publishedAt).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   return (
     <article className="max-w-4xl mx-auto">
@@ -68,18 +79,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
           <div className="flex items-center space-x-2">
             <Calendar className="w-4 h-4" />
-            <span>
-              {new Date(post.publishedAt).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
+            <span>{formattedDate}</span>
           </div>
 
           <div className="flex items-center space-x-2">
             <Clock className="w-4 h-4" />
-            <span>{post.readTime.toString()}</span>
+            <span>{post.readTime.toString()} min read</span>
           </div>
         </div>
 
@@ -101,16 +106,21 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       {/* Article content */}
       <div className="mb-12">
-        <MarkdownRenderer content={post.content} />
+        {/* Client component wrapped in Suspense */}
+        <Suspense fallback={<div>Loading content...</div>}>
+          <MarkdownRenderer content={post.content} />
+        </Suspense>
       </div>
 
       {/* Reactions */}
       <div className="mb-12">
-        <BlogReactions
-          postId={post.id.toString()}
-          initialLikes={post.likes}
-          initialDislikes={post.dislikes}
-        />
+        <Suspense fallback={<div>Loading reactions...</div>}>
+          <BlogReactions
+            postId={post.id.toString()}
+            initialLikes={post.likes}
+            initialDislikes={post.dislikes}
+          />
+        </Suspense>
       </div>
 
       {/* Related posts or navigation */}
@@ -168,7 +178,6 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
       title: post.title,
       description: post.excerpt,
       type: "article",
-      publishedTime: post.publishedAt.toLocaleDateString(),
       authors: [post.author],
       tags: post.tags,
     },

@@ -20,9 +20,11 @@ export default function BlogReactions({
     null,
   );
   const [isLoading, setIsLoading] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   // Load user's previous reaction from localStorage
   useEffect(() => {
+    setMounted(true);
     const savedReaction = localStorage.getItem(`blog-reaction-${postId}`);
     if (savedReaction === "like" || savedReaction === "dislike") {
       setUserReaction(savedReaction);
@@ -102,41 +104,54 @@ export default function BlogReactions({
         </span>
       </div>
 
-      <div className="flex items-center space-x-3">
-        <button
-          onClick={() => handleReaction("like")}
-          disabled={isLoading}
-          className={`flex items-center space-x-2 px-4 py-2 rounded-md border transition-all duration-200 ${
-            userReaction === "like"
-              ? "bg-red-50 border-red-200 text-green-700 dark:bg-green-900/20 dark:border-green-800 dark:text-green-400"
-              : "bg-background border-border text-muted-foreground hover:bg-accent hover:text-accent-foreground"
-          } ${isLoading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
-        >
-          <ThumbsUpIcon
-            className={`w-4 h-4 ${
-              userReaction === "like" ? "fill-current" : ""
-            }`}
-          />
-          <span className="text-sm font-medium">{likes}</span>
-        </button>
+      {!mounted ? (
+        <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 px-4 py-2 rounded-md border bg-background border-border">
+            <ThumbsUpIcon className="w-4 h-4 text-muted-foreground" />
+            <span className="text-sm font-medium text-muted-foreground">{likes}</span>
+          </div>
+          <div className="flex items-center space-x-2 px-4 py-2 rounded-md border bg-background border-border">
+            <ThumbsDown className="w-4 h-4 text-muted-foreground" />
+            <span className="text-sm font-medium text-muted-foreground">{dislikes}</span>
+          </div>
+        </div>
+      ) : (
+        <div className="flex items-center space-x-3">
+          <button
+            onClick={() => handleReaction("like")}
+            disabled={isLoading}
+            className={`flex items-center space-x-2 px-4 py-2 rounded-md border transition-all duration-200 ${
+              userReaction === "like"
+                ? "bg-red-50 border-red-200 text-green-700 dark:bg-green-900/20 dark:border-green-800 dark:text-green-400"
+                : "bg-background border-border text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+            } ${isLoading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+          >
+            <ThumbsUpIcon
+              className={`w-4 h-4 ${
+                userReaction === "like" ? "fill-current" : ""
+              }`}
+            />
+            <span className="text-sm font-medium">{likes}</span>
+          </button>
 
-        <button
-          onClick={() => handleReaction("dislike")}
-          disabled={isLoading}
-          className={`flex items-center space-x-2 px-4 py-2 rounded-md border transition-all duration-200 ${
-            userReaction === "dislike"
-              ? "bg-gray-50 border-gray-200 text-gray-700 dark:bg-gray-900/20 dark:border-gray-800 dark:text-gray-400"
-              : "bg-background border-border text-muted-foreground hover:bg-accent hover:text-accent-foreground"
-          } ${isLoading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
-        >
-          <ThumbsDown
-            className={`w-4 h-4 ${
-              userReaction === "dislike" ? "fill-current" : ""
-            }`}
-          />
-          <span className="text-sm font-medium">{dislikes}</span>
-        </button>
-      </div>
+          <button
+            onClick={() => handleReaction("dislike")}
+            disabled={isLoading}
+            className={`flex items-center space-x-2 px-4 py-2 rounded-md border transition-all duration-200 ${
+              userReaction === "dislike"
+                ? "bg-gray-50 border-gray-200 text-gray-700 dark:bg-gray-900/20 dark:border-gray-800 dark:text-gray-400"
+                : "bg-background border-border text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+            } ${isLoading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+          >
+            <ThumbsDown
+              className={`w-4 h-4 ${
+                userReaction === "dislike" ? "fill-current" : ""
+              }`}
+            />
+            <span className="text-sm font-medium">{dislikes}</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }
