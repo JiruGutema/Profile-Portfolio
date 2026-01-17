@@ -1,5 +1,4 @@
 import { ProjectDetailCard } from "@/components/portfolio/Project-Detail-Card"
-import { Separator } from "@/components/ui/separator"
 import { projects } from "../../components/data/projects"
 
 export default function ProjectsPage() {

@@ -1,4 +1,3 @@
-import { getBlogPosts } from "./data/blog-posts";
 import BlogCard from "@/components/blog/BlogCard";
 import { BlogPost } from "@/lib/types";
 import { baseUrl } from "@/lib/utils";
@@ -10,7 +9,6 @@ export default async function BlogPage() {
     (res) => res.json(),
   );
   const posts: BlogPost[] = res.data;
-  console.log("posts", posts)
 
   return (
     <div className="space-y-8">

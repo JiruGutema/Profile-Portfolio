@@ -17,7 +17,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
 
   const res = await prisma.blogPost.findFirst({
-    where: { slug },
+    where: { slug: slug },
   });
 
   if (!res) {
@@ -39,8 +39,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     dislikes: res.dislikes,
     coverImage: res.coverImage || undefined,
   };
-
-  // Format date as a string to avoid hydration mismatch
   const formattedDate = new Date(post.publishedAt).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -138,7 +136,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   );
 }
 
-// Generate metadata for SEO
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const { slug } = await params;
   const res = await prisma.blogPost.findFirst({
