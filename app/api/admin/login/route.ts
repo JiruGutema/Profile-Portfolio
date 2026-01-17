@@ -26,7 +26,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Compare hashed password
     const isValidPassword = await bcrypt.compare(password, user.password);
 
     if (!isValidPassword) {
@@ -36,13 +35,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Generate JWT token
     const token = signToken({
       userId: user.id,
       email: user.email,
     });
 
-    // Set JWT token in cookie
     const cookieStore = await cookies();
     cookieStore.set("admin-token", token, {
       httpOnly: true,

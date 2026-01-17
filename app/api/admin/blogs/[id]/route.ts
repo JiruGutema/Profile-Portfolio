@@ -4,7 +4,7 @@ import { getAdminUser } from "@/lib/auth";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
     const user = await getAdminUser();
@@ -26,14 +26,14 @@ export async function GET(
     console.error("Failed to fetch post:", error);
     return NextResponse.json(
       { error: "Internal server error" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
     const user = await getAdminUser();
@@ -43,27 +43,20 @@ export async function PUT(
 
     const { id } = await params;
     const data = await request.json();
-    const { title, slug, excerpt, content, author, readTime, tags, coverImage } = data;
+    const {
+      title,
+      excerpt,
+      content,
+      author,
+      readTime,
+      tags,
+      coverImage,
+    } = data;
 
-    if (!title || !slug || !excerpt || !content || !author || !readTime || !tags) {
+    if (!title || !excerpt || !content || !author || !readTime || !tags) {
       return NextResponse.json(
         { error: "Missing required fields" },
-        { status: 400 }
-      );
-    }
-
-    // Check if slug is taken by another post
-    const existing = await prisma.blogPost.findFirst({
-      where: {
-        slug,
-        NOT: { id: parseInt(id) },
-      },
-    });
-
-    if (existing) {
-      return NextResponse.json(
-        { error: "A post with this slug already exists" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -71,7 +64,6 @@ export async function PUT(
       where: { id: parseInt(id) },
       data: {
         title,
-        slug,
         excerpt,
         content,
         author,
@@ -86,14 +78,14 @@ export async function PUT(
     console.error("Failed to update post:", error);
     return NextResponse.json(
       { error: "Internal server error" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
     const user = await getAdminUser();
@@ -111,7 +103,7 @@ export async function DELETE(
     console.error("Failed to delete post:", error);
     return NextResponse.json(
       { error: "Internal server error" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
