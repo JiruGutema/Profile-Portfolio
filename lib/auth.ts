@@ -27,3 +27,29 @@ export async function getAdminUser() {
     return null;
   }
 }
+
+export async function getUser() {
+  try {
+    const cookieStore = await cookies();
+    const token = cookieStore.get("user-token");
+
+    if (!token) {
+      return null;
+    }
+
+    const payload = verifyToken(token.value);
+    if (!payload) {
+      return null;
+    }
+
+    const user = await prisma.user.findUnique({
+      where: { id: payload.userId },
+      select: { id: true, email: true, name: true },
+    });
+
+    return user;
+  } catch (error) {
+    console.error("Auth error:", error);
+    return null;
+  }
+}

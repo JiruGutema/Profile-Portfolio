@@ -58,16 +58,16 @@ export default function BlogCard({ post }: BlogCardProps) {
           </div>
 
           {/* Reactions preview */}
-          <div className="flex items-center space-x-3">
-            <div className="flex items-center space-x-1">
-              <ThumbsUpIcon className="w-4 h-4 text-gray-500" />
-              <span>{post.likes}</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <ThumbsDown className="w-4 h-4 text-gray-500" />
-              <span>{post.dislikes}</span>
-            </div>
-          </div>
+          {/* <div className="flex items-center space-x-3"> */}
+          {/*   <div className="flex items-center space-x-1"> */}
+          {/*     <ThumbsUpIcon className="w-4 h-4 text-gray-500" /> */}
+          {/*     <span>{post.likes}</span> */}
+          {/*   </div> */}
+          {/*   <div className="flex items-center space-x-1"> */}
+          {/*     <ThumbsDown className="w-4 h-4 text-gray-500" /> */}
+          {/*     <span>{post.dislikes}</span> */}
+          {/*   </div> */}
+          {/* </div> */}
         </div>
 
         {/* Read more link */}

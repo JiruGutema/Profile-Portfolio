@@ -16,8 +16,6 @@ async function createAdmin() {
   console.log("DATABASE_URL:", process.env.DATABASE_URL ? "✓ Found" : "✗ Not found");
 
   try {
-    // Hash the password
-    console.log("Hashing password...");
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const existing = await prisma.user.findUnique({ where: { email } });
