@@ -1,10 +1,11 @@
 "use client";
 import { Github, Moon, Sun } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const pathname = usePathname();
   const popupRef = useRef<HTMLDivElement | null>(null);
   const [isDark, setIsDark] = useState(false);
 
@@ -69,15 +70,18 @@ export function Header() {
         </a>
         {/* Desktop nav */}
         <nav className="hidden md:flex space-x-6 justify-center items-center">
-          <Link href="/" className="text-lg underline font-thi hover:underline">
-            Home
-          </Link>
-          <Link
-            href="/projects"
-            className="text-lg font-normal underline hover:underline"
-          >
-            Projects
-          </Link>
+<Link
+  href="/"
+  className={`text-lg  hover:underline ${pathname === '/' ? 'underline font-medium' : ""}`}
+>
+  Home
+</Link>
+<Link
+  href="/projects"
+  className={`text-lg  hover:underline ${pathname === '/projects' ? 'underline font-medium' : ''}`}
+>
+  Projects
+</Link>
           <button
             onClick={toggleTheme}
             className="ml-4 w-10 h-10 flex mt-1 text-xl items-center "
